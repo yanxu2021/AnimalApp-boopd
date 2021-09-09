@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import Header from './Header'
 import SignUp from '../pages/SignUp'
+import SignIn from '../pages/SignIn'
 
 class AppRouter extends React.Component {
     render() {
@@ -14,6 +15,7 @@ class AppRouter extends React.Component {
                 <Header/>
                 <Switch>
                   <Route path='/signup' component={SignUp}/>
+                  <Route path='/signin' component={SignIn}/>
                 </Switch>
             </Router>
         )
