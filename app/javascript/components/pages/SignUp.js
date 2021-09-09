@@ -6,44 +6,139 @@ import {
   RadioGroup,
   Radio,
   FormControl,
-  FormLabel
+  FormLabel,
+  Button
 } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 
 const styles = () => ({
   root: {
+  },
+  form: {
+    display: 'flex',
+    flexFlow: 'column',
+    alignContent: 'space-between',
+    marginRight: '150px',
+    marginLeft: '150px',
+  },
+  formGrid: {
+    display: 'flex',
+    flexFlow: 'column',
+  },
+  formRowOne: {
+    display: 'flex',
+    flexFlow: 'row',
+    justifyContent: 'space-around',
+    paddingBottom: '25px'
+  },
+  formRowTwo: {
+    display: 'flex',
+    flexFlow: 'row',
+    justifyContent: 'space-around',
+  },
+  formRowThree: {
+    display: 'flex',
+    flexFlow: 'row',
+    justifyContent: 'space-between',
+    marginLeft: '42px',
+    marginRight: '42px',
+  },
+  textInput: {
+    width: '450px'
+  },
+  role: {
+    paddingRight: '134px',
+    paddingLeft: '134px'
+  },
+  submitButton: {
+    marginTop: '50px',
+    width: '150px',
+    height: '50px',
+    containedPrimary: {
+      background: 'fe5f55'
+    },
+    background: 'fe5f55',
+    alignSelf: 'center'
   }
 })
 
 class SignUp extends Component{
   constructor(props){
     super(props)
+    this.state = {
+      form: {
+        firstName: '',
+        lastName: '',
+        username: '',
+        state: '',
+        role: '',
+        email: '',
+        password: '',
+        passwordConfirmation: ''
+      }
+    }
+  }
+
+  handleChange = e => {
+    let form = this.state.form
+    form[e.target.name] = e.target.value
+    this.setState({form: form})
+    console.log(this.state.form)
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+    alert('submitted', this.state.form)
   }
 
   render(){
+    const { classes } = this.props
     return(
       <>
         <Grid>
-          <FormControl>
-            <FormLabel>First Name</FormLabel>
-            <TextField aria-label="First Name"/>
-            <FormLabel>Last Name</FormLabel>
-            <TextField/>
-            <FormLabel>User Name</FormLabel>
-            <TextField/>
-            <FormLabel>State</FormLabel>
-            <TextField/>
-            <FormLabel>Role</FormLabel>
-            <RadioGroup aria-label="role" name="role" >
-              <FormControlLabel value="Looking For Pet" control={<Radio />} label="Looking For Pet" />
-              <FormControlLabel value="Looking For Home" control={<Radio />} label="Looking For Home" />
-            </RadioGroup>
-            <FormLabel>E-mail</FormLabel>
-            <TextField/>
-            <FormLabel>Password</FormLabel>
-            <TextField/>
-            <FormLabel>Confirm Password</FormLabel>
-            <TextField/>
+          <FormControl className={classes.form}>
+            <Grid className={classes.formRowOne}>
+              <Grid className={classes.formGrid}>
+                <FormLabel>First Name</FormLabel>
+                <TextField aria-label="First Name" className={classes.textInput} variant="outlined" name="firstName" onChange={this.handleChange}/>
+              </Grid>
+              <Grid className={classes.formGrid}>
+                <FormLabel>Last Name</FormLabel>
+                <TextField aria-label="Last Name" className={classes.textInput} variant="outlined" name="lastName" onChange={this.handleChange}/>
+              </Grid>
+              <Grid className={classes.formGrid}>
+                <FormLabel>User Name</FormLabel>
+                <TextField aria-label="Username" className={classes.textInput} variant="outlined" name="username" onChange={this.handleChange}/>
+              </Grid>
+            </Grid>
+            <Grid className={classes.formRowTwo}>
+              <Grid className={classes.formGrid}>
+                <FormLabel>State</FormLabel>
+                <TextField aria-label="State" className={classes.textInput} variant="outlined" name="state" onChange={this.handleChange}/>
+              </Grid>
+              <Grid className={classes.formGrid}>
+              <FormLabel>Role</FormLabel>
+                <RadioGroup aria-label="role" name="role"  onChange={this.handleChange} className={classes.role}>
+                  <FormControlLabel value="Looking For Pet" control={<Radio />} label="Looking For Pet" aria-label="Looking For Pet"/>
+                  <FormControlLabel value="Looking For Home" control={<Radio />} label="Looking For Home" aria-label="Looking For Home"/>
+                </RadioGroup>
+              </Grid>
+              <Grid className={classes.formGrid}>
+                <FormLabel>E-mail</FormLabel>
+                <TextField aria-label="Email" className={classes.textInput} variant="outlined" name="email" onChange={this.handleChange}/>
+              </Grid>
+            </Grid>
+            <Grid className={classes.formRowThree}>
+              <Grid className={classes.formGrid}>
+                <FormLabel>Password</FormLabel>
+                <TextField aria-label="Password" className={classes.textInput} variant="outlined" name="password" onChange={this.handleChange}/>
+              </Grid>
+              <Grid className={classes.formGrid}>
+                <FormLabel>Confirm Password</FormLabel>
+                <TextField aria-label="Confirm Password" className={classes.textInput} variant="outlined" name="passwordConfirmation" onChange={this.handleChange}/>
+              </Grid>
+            </Grid>
+          <Button variant="contained" className={classes.submitButton} onClick={this.handleSubmit}>Sign Up</Button>
           </FormControl>
         </Grid>
       </>
