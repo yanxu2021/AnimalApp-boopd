@@ -10,53 +10,7 @@ import {
   Button
 } from '@material-ui/core'
 import { withStyles, } from '@material-ui/core/styles'
-
-const styles = () => ({
-  root: {
-  },
-  form: {
-    display: 'flex',
-    flexFlow: 'column',
-    alignContent: 'space-between',
-    marginRight: '150px',
-    marginLeft: '150px',
-  },
-  formGrid: {
-    display: 'flex',
-    flexFlow: 'column',
-  },
-  formRowOne: {
-    display: 'flex',
-    flexFlow: 'row',
-    justifyContent: 'space-around',
-    paddingBottom: '25px'
-  },
-  formRowTwo: {
-    display: 'flex',
-    flexFlow: 'row',
-    justifyContent: 'space-around',
-  },
-  formRowThree: {
-    display: 'flex',
-    flexFlow: 'row',
-    justifyContent: 'space-between',
-    marginLeft: '42px',
-    marginRight: '42px',
-  },
-  textInput: {
-    width: '450px',
-  },
-  role: {
-    paddingRight: '134px',
-    paddingLeft: '134px'
-  },
-  submitButton: {
-    marginTop: '50px',
-    width: '150px',
-    height: '50px',
-    alignSelf: 'center'
-  }
-})
+import { signUpStyles } from './signUpStyles'
 
 class SignUp extends Component{
   constructor(props){
@@ -84,7 +38,24 @@ class SignUp extends Component{
 
   handleSubmit = e => {
     e.preventDefault()
-    alert('submitted', this.state.form)
+    let data = {
+      first_name: this.state.form.firstName,
+      last_name: this.state.form.lastName,
+      state: this.state.form.state,
+      role: this.state.form.role,
+      email: this.state.form.email,
+      password: this.state.form.password,
+      password_confirmation: this.state.form.passwordConfirmation
+    }
+    fetch('/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ user: data })
+    })
+      .then(response => console.log(response))
+      .catch(err => console.log(err))
   }
 
   render(){
@@ -121,7 +92,7 @@ class SignUp extends Component{
               </Grid>
               <Grid className={classes.formGrid}>
                 <FormLabel>E-mail</FormLabel>
-                <TextField aria-label="Email" className={classes.textInput} variant="outlined" name="email" onChange={this.handleChange}/>
+                <TextField aria-label="Email" type="email" className={classes.textInput} variant="outlined" name="email" onChange={this.handleChange}/>
               </Grid>
             </Grid>
             <Grid className={classes.formRowThree}>
@@ -142,4 +113,4 @@ class SignUp extends Component{
   }
 }
 
-export default withStyles(styles)(SignUp)
+export default withStyles(signUpStyles)(SignUp)
