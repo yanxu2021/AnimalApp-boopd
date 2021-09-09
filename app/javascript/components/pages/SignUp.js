@@ -9,7 +9,7 @@ import {
   FormLabel,
   Button
 } from '@material-ui/core'
-import { withStyles } from '@material-ui/core/styles'
+import { withStyles, } from '@material-ui/core/styles'
 
 const styles = () => ({
   root: {
@@ -44,7 +44,7 @@ const styles = () => ({
     marginRight: '42px',
   },
   textInput: {
-    width: '450px'
+    width: '450px',
   },
   role: {
     paddingRight: '134px',
@@ -54,10 +54,6 @@ const styles = () => ({
     marginTop: '50px',
     width: '150px',
     height: '50px',
-    containedPrimary: {
-      background: 'fe5f55'
-    },
-    background: 'fe5f55',
     alignSelf: 'center'
   }
 })
@@ -138,7 +134,7 @@ class SignUp extends Component{
                 <TextField aria-label="Confirm Password" className={classes.textInput} variant="outlined" name="passwordConfirmation" onChange={this.handleChange}/>
               </Grid>
             </Grid>
-          <Button variant="contained" className={classes.submitButton} onClick={this.handleSubmit}>Sign Up</Button>
+            <Button variant="contained" style={{backgroundColor:'fe5f55'}} className={classes.submitButton} onClick={this.handleSubmit}>Sign Up</Button>
           </FormControl>
         </Grid>
       </>
