@@ -96,7 +96,41 @@ RSpec.describe "Pets", type: :request do
     end
   end
 
-  # describe 'show' do
+  describe 'show' do
+    let(:request){ get "/pets/#{pet3.id}" }
+    let (:expected_response){{
+      "id"=>pet3.id,
+      "name"=>pet3.name,
+      "species"=>pet3.species,
+      "sex"=>pet3.sex,
+      "breed"=>pet3.breed,
+      "vaccinations"=>pet3.vaccinations,
+      "medical"=>pet3.medical,
+      "behavior"=>pet3.behavior,
+      "fixed"=>pet3.fixed,
+      "available"=>pet3.available,
+      "age"=>pet3.age,
+      "description"=>pet3.description,
+      "city"=>pet3.city,
+      "state"=>pet3.state,
+      "housetrained"=>pet3.housetrained,
+      "declawed"=>pet3.declawed,
+      "lived_with_children"=>pet3.lived_with_children,
+      "lived_with_animals"=>pet3.lived_with_animals,
+      "img_caption"=>pet3.img_caption,
+      "user_id"=>pet3.user_id
+    }}
 
-  # end
+    it 'returns pet 3' do
+      request
+      expect(response.status).to be 200
+      expect(JSON.parse(response.body)).to include expected_response
+    end
+  end
+
+  describe 'edit' do
+    let(:request){ patch "/pets/#{pet3.id}" }
+    let (:expected_response){{
+      
+    }}
 end

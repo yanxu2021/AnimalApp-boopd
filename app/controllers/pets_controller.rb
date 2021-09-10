@@ -1,16 +1,18 @@
 class PetsController < ApplicationController
+  before_action :authenticate_user!, only: [:create]
   def index
     pets = Pet.all
     render json: pets
   end
 
+  def show
+    pet = Pet.find(params[:id])
+    render json: pet
+  end
+
   def create
-    if current_user
       pet = current_user.pets.create(pet_params)
       render json: pet
-    else
-      head 401
-    end
   end
 
   private
