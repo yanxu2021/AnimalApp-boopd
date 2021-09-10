@@ -47,28 +47,11 @@ RSpec.describe "Pets", type: :request do
     lived_with_children: true,
     lived_with_animals: true
   } }
-  # User.delete_all
-  # user2 = User.create!({
-  #   email: 'otherguy@test.com',
-  #   password: 'password1',
-  #   first_name: 'tester',
-  #   last_name: 'mrtester',
-  #   role: 'big boss',
-  #   state: 'CA'
-  # })
-  # let(:sign_in_user2){
-  #   post '/users/sign_in', params: {
-  #     user: {
-  #       email: 'otherguy@test.com', password: 'password1'
-  #     }
-  #   }
-  # }
 
   before do
     pet2
     pet3
-    # sign_in(user)
-    # sign_in_user2
+    sign_in(user)
   end
 
   describe 'create' do
