@@ -5,14 +5,17 @@ import {
     Switch
 } from 'react-router-dom'
 import Header from './Header'
+import SignUp from '../pages/SignUp'
+import SignIn from '../pages/SignIn'
 
 class AppRouter extends React.Component {
     render() {
         return(
             <Router>
                 <Header/>
-                <Switch>   
-
+                <Switch>
+                  <Route path='/signup' component={SignUp}/>
+                  <Route path='/signin' component={SignIn}/>
                 </Switch>
             </Router>
         )
