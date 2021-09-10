@@ -20,21 +20,51 @@ import {
 class SignIn extends React.Component{
     constructor(props){
         super(props)
+        this.state = {
+            form: {
+                email: '',
+                password: ''
+            }
+        }
     }
-    render(){
 
+    handleChange = e => {
+        let { form }= this.state
+        form[e.target.name] = e.target.value
+        this.setState({form: form})
+        console.log(this.state)
+    }
+
+    handleSubmit = e => {
+        e.preventDefault()
+        let data = {
+            email: this.state.form.email,
+            password: this.state.form.password
+        }
+        fetch('/users/sign_in', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ user: data })
+        })
+        .then(response => console.log(response))
+        .catch(err => console.log(err))
+    }
+    
+    render(){
         const {classes} = this.props
         return(
             <>
             <Grid className={classes.root}>
                 <FormControl>
                 <FormLabel>E-mail</FormLabel>
-                <TextField aria-label="E-mail" variant="outlined" size="small"/>
+                <TextField onChange={this.handleChange} name='email' aria-label="E-mail" variant="outlined" size="small"/>
                 <br />
                 <FormLabel>Password</FormLabel>
-                <TextField aria-label="Password" variant="outlined" size="small"/>
+                <TextField onChange={this.handleChange} name='password' aria-label="Password" variant="outlined" size="small"/>
                 <br />
-                <Button aria-label="Sign In" variant="contained" color="secondary"  size="small">Sign In</Button>
+                <Button onClick={this.handleSubmit} aria-label="Sign In" variant="contained" color="secondary"  size="small">Sign In</Button>
                 </FormControl>
             </Grid>
             </>
