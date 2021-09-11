@@ -1,5 +1,5 @@
 class PetsController < ApplicationController
-  before_action :authenticate_user!, only: [:create]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
   def index
     pets = Pet.all
     render json: pets
@@ -13,6 +13,25 @@ class PetsController < ApplicationController
   def create
       pet = current_user.pets.create(pet_params)
       render json: pet
+  end
+
+  def update
+    pet = Pet.find(params[:id])
+    if current_user.id == pet.user_id
+      pet.update(pet_params)
+      render json: pet
+    else
+      head 401
+    end
+  end
+
+  def destroy
+    pet = Pet.find(params[:id])
+    if current_user.id == pet.user_id
+      pet.destroy
+    else
+      head 401
+    end
   end
 
   private
