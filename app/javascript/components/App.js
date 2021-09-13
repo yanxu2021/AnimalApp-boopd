@@ -4,6 +4,7 @@ import AppRouter from "./components/AppRouter";
 
 class App extends React.Component {
   render () {
+    console.log(this.props)
     return (
       <React.Fragment>
         <AppRouter/>
