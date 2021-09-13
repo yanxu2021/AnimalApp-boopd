@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
+import Nav from './Nav.js'
 
-class Header extends React.Component {
-    render() {
-        return(
-            <>
-            <h2>This is Header</h2>
-            </>
-        )
-    }
-}
-
-export default Header
+  class Header extends React.Component {
+      render(){
+          return(
+              <>
+                  <Nav/>
+              </>
+          )
+      }
+  }
+  export default Header
