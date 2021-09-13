@@ -4,10 +4,6 @@
   "dependencies": {
     "@babel/preset-react": "^7.14.5",
     "@material-ui/core": "^4.12.3",
-<<<<<<< HEAD
-    "@material-ui/icons": "^4.11.2",
-=======
->>>>>>> 7c7436dc9bdd6fba763671088df3eb72cf1c2ddf
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",

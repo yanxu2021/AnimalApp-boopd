@@ -4,9 +4,9 @@ import Nav from './Nav.js'
   class Header extends React.Component {
       render(){
           return(
-              <div>
+              <>
                   <Nav/>
-              </div>
+              </>
           )
       }
   }

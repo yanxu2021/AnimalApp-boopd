@@ -13,10 +13,14 @@
  *= require_tree .
  *= require_self
  */
-
+/* -------NAV BAR-------- */
  .MuiAppBar-colorPrimary {
-     color: #fff;
-     background-color: #fe5f55 !important;
+     color: #fe5f55 !important;
+     background-color: #efefef !important;
+ }
+ .MuiInputBase-input {
+     background: #fff !important;
+     border-radius: 20px !important;
  }
 .MuiButton-contained{
   background-color: #fe5f55 !important;
