@@ -5,7 +5,6 @@ import Nav from './Nav.js'
       render(){
           return(
               <div>
-                  <h1>Say Hi from Header</h1>
                   <Nav/>
               </div>
           )
