@@ -5,10 +5,12 @@ import {
     Switch
 } from 'react-router-dom'
 import Header from './Header'
+import Footer from './Footer'
 import SignUp from '../pages/SignUp'
 import SignIn from '../pages/SignIn'
 import PetNew from '../pages/PetNew'
 import NotFound from '../pages/NotFound'
+import AboutUs from '../pages/AboutUs'
 
 class AppRouter extends React.Component {
     render() {
@@ -24,9 +26,11 @@ class AppRouter extends React.Component {
                     <Route component={NotFound}/>
                   </Switch>
                 </div>
+            <Footer/>
             </Router>
         )
     }
 }
+
 
 export default AppRouter
