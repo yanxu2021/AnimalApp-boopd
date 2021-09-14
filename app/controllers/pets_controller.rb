@@ -11,8 +11,14 @@ class PetsController < ApplicationController
   end
 
   def create
-      pet = current_user.pets.create(pet_params)
+    pet = current_user.pets.create(pet_params)
+    if pet.valid?
       render json: pet
+    else
+      render json: {
+        error: 'Invalid parameters for pet object'
+      }, status: :unprocessable_entity
+    end
   end
 
   def update

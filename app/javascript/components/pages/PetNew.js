@@ -26,7 +26,7 @@ class PetNew extends React.Component {
         behavior:"",
         city:"",
         state:"",
-        available:true,
+        available:"",
         description:"",
         housetrained:false,
         vaccinations:false,
@@ -49,12 +49,6 @@ class PetNew extends React.Component {
     }
     this.setState({pet})
     console.log(this.state)
-  }
-
-  handleAvailability = (e) => {
-    const value = e.target.value === "true"
-    let { pet } = this.state
-    this.setState({ pet: { ...pet, available: value } })
   }
 
   handleMedical = (e) => {
@@ -198,7 +192,7 @@ class PetNew extends React.Component {
                 <RadioGroup
                   aria-label="availability"
                   name="available"
-                  onChange={this.handleAvailability}
+                  onChange={this.handleChange}
                 >
                   <FormControlLabel
                   value="true"

@@ -172,7 +172,7 @@ export default function PrimarySearchAppBar() {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            
+
             <IconButton
               edge="end"
               aria-label="account of current user"
