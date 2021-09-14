@@ -5,7 +5,7 @@ import Nav from './Nav.js'
       render(){
           return(
               <>
-                  <Nav/>
+                  <Nav {...this.props}/>
               </>
           )
       }

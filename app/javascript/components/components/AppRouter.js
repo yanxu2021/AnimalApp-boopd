@@ -17,7 +17,7 @@ class AppRouter extends React.Component {
         console.log(this.props.loggedIn)
         return(
             <Router>
-                <Header/>
+                <Header {...this.props} />
                 <Switch>
                   <Route path='/signup' component={SignUp}/>
                   <Route path='/signin' component={SignIn}/>
