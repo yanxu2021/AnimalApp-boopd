@@ -16,12 +16,14 @@ class AppRouter extends React.Component {
         return(
             <Router>
                 <Header/>
-                <Switch>
-                  <Route path='/signup' component={SignUp}/>
-                  <Route path='/signin' component={SignIn}/>
-                  {this.props.loggedIn && <Route path='/petnew' component={PetNew}/> }
-                  <Route component={NotFound}/>
-                </Switch>
+              <div style={{paddingTop: '90px'}}>
+                  <Switch>
+                    <Route path='/signup' component={SignUp}/>
+                    <Route path='/signin' component={SignIn}/>
+                    {this.props.loggedIn && <Route path='/petnew' component={PetNew}/> }
+                    <Route component={NotFound}/>
+                  </Switch>
+                </div>
             </Router>
         )
     }
