@@ -23,6 +23,15 @@
      border-radius: 20px !important;
  }
 
+ .nav-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: #fe5f55;
+    padding: 10px;
+ }
+
  /* -------FOOTER--------- */
  .footer {
 
