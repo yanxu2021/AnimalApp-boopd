@@ -44,11 +44,6 @@ RSpec.describe Pet, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'is not valid without fixed' do
-    subject.fixed = nil
-    expect(subject).to_not be_valid
-  end
-
   it 'is not valid without available' do
     subject.available = nil
     expect(subject).to_not be_valid

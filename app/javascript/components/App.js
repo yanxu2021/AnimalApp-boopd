@@ -8,7 +8,7 @@ class App extends React.Component {
     console.log(this.props)
     return (
       <React.Fragment>
-        <AppRouter/>
+        <AppRouter loggedIn={this.props.logged_in}/>
       </React.Fragment>
     );
   }

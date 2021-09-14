@@ -33,7 +33,6 @@ class SignUp extends Component{
     let form = this.state.form
     form[e.target.name] = e.target.value
     this.setState({form: form})
-    console.log(this.state.form)
   }
 
   handleSubmit = e => {
