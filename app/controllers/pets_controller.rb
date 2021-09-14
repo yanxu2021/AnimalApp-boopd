@@ -11,8 +11,8 @@ class PetsController < ApplicationController
   end
 
   def create
-      pet = current_user.pets.create(pet_params)
-      render json: pet
+    pet = current_user.pets.create(pet_params)
+    render json: pet
   end
 
   def update
