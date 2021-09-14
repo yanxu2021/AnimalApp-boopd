@@ -26,7 +26,7 @@ class PetNew extends React.Component {
         behavior:"",
         city:"",
         state:"",
-        available:'',
+        available:"",
         description:"",
         housetrained:false,
         vaccinations:false,
@@ -207,7 +207,7 @@ class PetNew extends React.Component {
                   aria-label="Available Now"
                   />
                   <FormControlLabel
-                  value='false'
+                  value="false"
                   control={<Radio />}
                   label="Not Available"
                   aria-label="Not Available"
