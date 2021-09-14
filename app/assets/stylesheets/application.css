@@ -13,6 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.page-body{
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.p-body{
+  text-align: left;
+  padding-left: 5rem;
+}
+
 /* -------NAV BAR-------- */
  .MuiAppBar-colorPrimary {
      color: #fe5f55 !important;
@@ -33,14 +50,18 @@
  }
 
  /* -------FOOTER--------- */
- .footer {
-
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
+ footer {
+  font-size: 15px;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fe5f55 !important;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 /* --------DEVISE--------- */
 .MuiButton-contained{
