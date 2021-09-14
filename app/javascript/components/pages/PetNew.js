@@ -51,12 +51,6 @@ class PetNew extends React.Component {
     console.log(this.state)
   }
 
-  // handleAvailability = (e) => {
-  //   const value = e.target.value === "true"
-  //   let { pet } = this.state
-  //   this.setState({ pet: { ...pet, available: value } })
-  // }
-
   handleMedical = (e) => {
     //get value from medical field
     let value = this.medicalInput.current.value
