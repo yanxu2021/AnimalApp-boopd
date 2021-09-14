@@ -61,14 +61,47 @@ class PetNew extends React.Component {
     //get value from medical field
     let value = this.medicalInput.current.value
     //add value to pet medical array
-    let pet = this.state.pet 
+    let pet = this.state.pet
     pet.medical.push(value)
     this.setState({pet})
     this.medicalInput.current.value = ""
   }
 
-  handleSubmit = () => {
-    
+  handleSubmit = (e) => {
+    e.preventDefault()
+    let { pet } = this.state
+    let data = {
+      name: pet.name,
+      age: pet.age,
+      sex: pet.sex,
+      species: pet.species,
+      breed: pet.breed,
+      behavior: pet.behavior,
+      city: pet.city,
+      state: pet.state,
+      available: pet.available,
+      description: pet.description,
+      housetrained: pet.housetrained,
+      vaccinations: pet.vaccinations,
+      lived_with_animals: pet.livedWithAnimals,
+      fixed: pet.fixed,
+      declawed: pet.declawed,
+      lived_with_children: pet.livedWithChildren,
+      medical: pet.medical
+    }
+    console.log(pet)
+    fetch('/pets', {
+      method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      body: JSON.stringify({ pet: data })
+    })
+      .then(response => {
+        console.log(response)
+        this.props.history.push('/')
+      })
+      .catch(err => console.log(err))
   }
 
   render() {
@@ -235,17 +268,17 @@ class PetNew extends React.Component {
               <FormLabel>Please List Medical Issues</FormLabel>
               {medical && medical.map((issue, index)=>{
                 return(
-                  <>
+                  <div key={index}>
                     <FormLabel>Issue {index+1}</FormLabel>
                     <Typography>{issue}</Typography>
-                  </>
+                  </div>
                 )
               })}
-              <FormControlLabel 
+              <FormControlLabel
                 control={
-                  <TextField 
+                  <TextField
                   inputRef={this.medicalInput}
-                  onChange={this.handleChange} 
+                  onChange={this.handleChange}
                   aria-label="Description"
                   variant="outlined"
                   name="description"
