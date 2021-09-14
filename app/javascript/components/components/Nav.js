@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom'
 import { alpha, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -10,7 +11,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import logo from '../components/images/logo.png'
+import logo from '../components/images/logo.png';
+
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -79,6 +81,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 export default function PrimarySearchAppBar() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -103,6 +106,8 @@ export default function PrimarySearchAppBar() {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
+
+  const [logged_in, SignIn, SignUp ] = useState(false);
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -149,8 +154,9 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow}>
         <AppBar>
         <Toolbar>
+          <NavLink to="/">
         <img src={logo} alt="logo" className={classes.logo} />
-         
+          </NavLink>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -188,6 +194,9 @@ export default function PrimarySearchAppBar() {
             >
               <MoreIcon />
             </IconButton>
+            {logged_in && <a href='/signout' className="nav-link">Sign Out</a>}
+            {!logged_in && <a href='/signin' className="nav-link">Sign In</a>}
+            {!logged_in && <a href='/signup' className="nav-link">Register</a>}
             <IconButton
             edge="end"
             className={classes.menuButton}
