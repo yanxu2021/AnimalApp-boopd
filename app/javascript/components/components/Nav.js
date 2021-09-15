@@ -182,7 +182,6 @@ export default function PrimarySearchAppBar(props) {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-
             {loggedIn && <a href='/petindex' className="nav-link">See All Listings</a>}
             {loggedIn && <a href='/petnew' className="nav-link">Create Listing</a>}
             {loggedIn && <a href='/aboutus' className="nav-link">About Us</a>}
@@ -201,15 +200,6 @@ export default function PrimarySearchAppBar(props) {
             </IconButton>
           </div>
           <div>
-            <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
             <IconButton
             edge="end"
             className={classes.menuButton}

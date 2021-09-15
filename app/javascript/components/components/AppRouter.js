@@ -12,6 +12,7 @@ import PetNew from '../pages/PetNew'
 import Index from '../pages/Index'
 import NotFound from '../pages/NotFound'
 import AboutUs from '../pages/AboutUs'
+import Home from '../pages/Home'
 import PetShow from '../pages/PetShow'
 import { createBrowserHistory } from 'history'
 
@@ -54,6 +55,7 @@ class AppRouter extends React.Component {
                     return <PetShow history={props.history} loggedIn={this.props.loggedIn} pets={pets} match={props.match} readPet={this.readPet} />
                   }}/>
                   <Route path='/aboutus' component={AboutUs}/>
+                  <Route path='/' component={Home}/>
                   <Route component={NotFound}/>
                 </Switch>
                 </div>
