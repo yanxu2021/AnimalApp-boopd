@@ -122,8 +122,11 @@ Stretch Goals
 <h2 align="center">Meet Team KYAC</h2>
 
 > Kelen Yafuso - Tech Lead
+
 > Yan Xu - Project Manager
+
 > Amanda Ferguson - Design Lead
+
 > Chris Luna - Product Manager
 
 <h3 align="center">:computer:Please feel free to contact us @team.kyac@gmail.com</h3>
