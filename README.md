@@ -78,7 +78,9 @@ Every snoot deserves a boop.
 > Make sure everyone feels included
 
 <h1 align="center">Features </h1>
+
 More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
+
 ### User Story and Wireframe
 - [x] Sign-in Page
 - [x] Sign-up Page
