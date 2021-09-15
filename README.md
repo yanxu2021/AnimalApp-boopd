@@ -11,7 +11,7 @@ With our pet-adoption-resource boopd, we connect struggling animals with benevol
 
 **Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)
 
-## :computer_mouse:Contact Us: team.kyac@gmail.com
+### :computer_mouse:Contact Us: team.kyac@gmail.com
 
 ## 1. Capstone Project 
 **boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
