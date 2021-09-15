@@ -9,9 +9,7 @@ Every snoot deserves a boop.
 
 *We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
 
-### :computer:About Us: 
-
-<span style="color:blue">KYAC</span>
+### :computer:About Us:      *KYAC*
 
 **Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)
 
@@ -22,7 +20,12 @@ Every snoot deserves a boop.
 
 ### 1.1 Project Requirements
 - [x] React in Rails application
+    - [x] As a developer, I need to add react to the Rails application and add Webpacker to compile JavaScript.
+    - [x] As a developer, I need to create a full-stack application by adding a React component using a generate command. 
 - [x] User authentication (register, login, logout)
+    - [x] As a developer, I can use devise to generate user model and controllers for my application.
+    - [x] As a developer, I need test the user sign-up, sign-in, and sign-out functions to make sure the user model works.
+    - [x] As a developer, I can add state, role, first name, last name, and description to my devise user model.
 - [x] Minimum of two database tables (one will be User)
 - [ ] Minimum of one external API
   - [ Spotify ](https://developer.spotify.com/documentation/web-api/)
@@ -56,6 +59,29 @@ Every snoot deserves a boop.
 ## 2. Features
 More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
 ### 2.1 User Story and Wireframe
+- [x] Sign-in Page
+- [x] Sign-up Page
+- [x] File Structure for Frontend
+- [x] Animal Model& CURD
+- [x] Header
+    - [x] As a user, I can see a fixed navigation bar on the top of page, so I can navigate to different pages.
+    - [x] As a user, I will see the App logo.
+    - [x] As a user, I can click the Home navigation button to go back to home page.
+    - [x] As a user, I can click the sign-out button to logout.
+    - [x] As a user, I can click the register navigation button to see a sign-up form.
+    - [x] As a mobile user, I will see a hamburger icon that will toggle the navigation menu and close.
+    
+- [x] Footer
+- [x] Animal New
+- [x] Animal Index
+- [x] Animal Show
+- [x] About Us
+
+Stretch Goals
+- [x] User Profile
+- [x] User Blog
+- [x] User Terms& Conditions
+- [x] Search Bar
 
 ![wireframe](./img/wireframe.png)
 
