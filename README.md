@@ -27,6 +27,7 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
     
 <h1 align="center">About the Project </h1>
+
 **boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
 ```
