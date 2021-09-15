@@ -1,10 +1,4 @@
-<p align="center">
-    
 # <img width="300" src="./img/logo.jpg"/>
-    
-</p>
-<p align="center">
-    
 ## Running the App
 ### Live Version
 link to the live version
@@ -33,9 +27,6 @@ link to the live version
 - Material-Ui/Core
 - Materical-Ui/Icon
     
-</p>
-<p align="center">
-    
 ## Reporting a Vulnerability
 
 To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps.
@@ -49,7 +40,6 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
     
-</p>
 ## About the Project 
 **boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
