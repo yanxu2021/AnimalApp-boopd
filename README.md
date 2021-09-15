@@ -44,9 +44,18 @@ We at KYAC Inc. have seen an increase of de-homed animals and struggling familie
 - Make sure everyone feels included
 
 ## 2. Features
-### 2.1 User Story
-### 2.2 Wireframe
+More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
+### 2.1 User Story and Wireframe
+
+![wireframe](./img/wireframe.png)
+
+### 2.2 User Flow
+
+![user flow](./img/flow.png)
+
 ### 2.3 Database Schema
+
+![database schema](./img/db.png)
 
 ## 3. Running the App
 ### 3.1 Live Version
