@@ -2,8 +2,8 @@
   <img width="250" src="./img/logo.jpg"/>
 </p>
 
-## Running the App
-### Live Version
+<h1 align="center">Running the App</h1>
+<p align="center">Live Version</p>
 link to the live version
 
 ![Home page](./img/home.jpg)
