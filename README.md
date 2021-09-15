@@ -15,11 +15,11 @@
 
 <h1 align="center">Dependencies</h1>
 <p align="center">
-- React
-- React-DOM
-- Webpack
-- Material-Ui/Core
-- Materical-Ui/Icon
+<ul>React</ul>
+<ul>React-DOM</ul>
+<ul>Webpack</ul>
+<ul>Material-Ui/Core</ul>
+<ul>Materical-Ui/Icon</ul>
 </p>
     
 <h2 align="center">Reporting a Vulnerability</h2>
