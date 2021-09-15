@@ -12,15 +12,15 @@ link to the live version
 2. Run in your bash/command line
 3. Run  in your bash/command line
 
-### Dependencies
+### >Dependencies
 - React
 - React-DOM
 - Webpack
     
-### Reporting a Vulnerability
+### >Reporting a Vulnerability
 To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps. Thanks for helping to keep **boopd** secure.
 
-### Want to contribute to boopd?y
+### >Want to contribute to boopd?
 Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Check out the issues with the [good first issue]() and [help wanted]() label. We suggest also looking at the closed ones to get a sense of the kinds of issues you can tackle.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
@@ -76,7 +76,7 @@ Every snoot deserves a boop.
 
 > Make sure everyone feels included
 
-## Features
+<h1 align="center">Features </h1>
 More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
 ### User Story and Wireframe
 - [x] Sign-in Page
@@ -116,11 +116,11 @@ Stretch Goals
 
 ![database schema](./img/db.png)
 
-<h1 align="center">:computer:About Us - KYAC</h1>
+<h2 align="center">:computer:About Us - KYAC</h2>
 <h4 align="center">Kelen Yafuso - Tech Lead</h4> 
 <h4 align="center">Yan Xu - Project Manager</h4>
 <h4 align="center">Amanda Ferguson - Design Lead</h4>  
 <h4 align="center">Chris Luna - Product Manager</h4>
 
-<h1 align="center">:computer:Contact Us</h1>
+<h2 align="center">:computer:Contact Us</h2>
 <h3 align="center">team.kyac@gmail.com</h3>
