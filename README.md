@@ -70,8 +70,11 @@ More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/)
     - [x] As a user, I can click the sign-out button to logout.
     - [x] As a user, I can click the register navigation button to see a sign-up form.
     - [x] As a mobile user, I will see a hamburger icon that will toggle the navigation menu and close.
-    
+    - [x] As a mobile user, I will see the same button as Desktop user in the hamburger navigation bar.
 - [x] Footer
+    - [x] As a user, I will see a footer at all pages.
+    - [x] As a user, I will see the copyright at the page footer.
+    - [x] As a user, I can navigate 
 - [x] Animal New
 - [x] Animal Index
 - [x] Animal Show
