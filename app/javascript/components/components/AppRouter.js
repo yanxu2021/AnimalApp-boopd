@@ -34,6 +34,8 @@ class AppRouter extends React.Component {
         .catch(errors => console.log("index errors:", errors))
       }
 
+      
+
     render() {
         console.log(this.props.loggedIn)
         const { pets } = this.state
@@ -49,7 +51,7 @@ class AppRouter extends React.Component {
                       return <Index {...this.props} pets={this.state.pets} history={props.history}/>
                   }}/>
                   <Route path='/petshow/:id' render={(props) => {
-                    return <PetShow history={props.history} loggedIn={this.props.loggedIn} pets={pets} match={props.match} />
+                    return <PetShow history={props.history} loggedIn={this.props.loggedIn} pets={pets} match={props.match} readPet={this.readPet} />
                   }}/>
                   <Route path='/aboutus' component={AboutUs}/>
                   <Route component={NotFound}/>
