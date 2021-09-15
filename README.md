@@ -2,6 +2,19 @@
   <img width="250" src="./img/logo.jpg"/>
 </p>
 
+<h1 align="center">About the Project </h1>
+
+**boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
+
+```
+Every snoot deserves a boop.
+```
+*We* at KYAC Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
+
+*With* our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. 
+
+*We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
+
 <h1 align="center">Running the App</h1>
 
 Live Version | From the Repo
@@ -25,18 +38,13 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
     
-<h1 align="center">About the Project </h1>
 
-**boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
-```
-Every snoot deserves a boop.
-```
-*We* at KYAC Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
 
-*With* our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. 
 
-*We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
+<h1 align="center">Features </h1>
+
+More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
 
 ### Project Requirements
 - [x] React in Rails application
@@ -66,19 +74,13 @@ Every snoot deserves a boop.
 - [x] Continuous Integration
 
 ### Things to Think About
-> Step out of your comfort zone
-
-> Work with everyone in your group
-
-> Work on a feature or part of the app you’re not completely comfortable with
-
-> Organization and clear communication - make sure everyone is on the same page
-
-> Make sure everyone feels included
-
-<h1 align="center">Features </h1>
-
-More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
+```
+Step out of your comfort zone
+Work with everyone in your group
+Work on a feature or part of the app you’re not completely comfortable with
+Organization and clear communication - make sure everyone is on the same page
+Make sure everyone feels included
+```
 
 ### User Story 
 - [x] Sign-in Page
