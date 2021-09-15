@@ -22,9 +22,6 @@ const PetShow = ({match, pets, history, readPet}) => {
       livedWithChildren = pet.lived_with_children
     }
   }
-  React.useEffect(() => {
-    console.log(history)
-  }, [pet])
 
   const deletePet = (id) => {
     fetch(`/pets/${id}`, {
@@ -33,13 +30,13 @@ const PetShow = ({match, pets, history, readPet}) => {
       },
       method: "DELETE"
     })
-    .then(response => { 
+    .then(response => {
       readPet()
       history.push('/index')
     })
     .catch(errors => console.log("delete errors:", errors))
   }
-  
+
   return(
     <Grid>
       {pet && (

@@ -30,8 +30,7 @@ class AppRouter extends React.Component {
       readPet = () => {
         fetch("/pets")
         .then(response => response.json())
-        .then(payload => {this.setState({pets: payload})
-        console.log(payload)})
+        .then(payload => this.setState({pets: payload}))
         .catch(errors => console.log("index errors:", errors))
       }
 
