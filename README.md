@@ -3,8 +3,8 @@
 </p>
 
 <h1 align="center">Running the App</h1>
-<h2 align="center">Live Version</h2>
-<p align="center">link to the live version</p>
+## Live Version
+link to the live version
 
 <h2 align="center">From the Repo</h2>
 <h4 align="center">1. Clone this repo locally</h4>
