@@ -2,7 +2,7 @@
   <img width="250" src="./img/logo.jpg"/>
 </p>
 
-**boopd** is a full-stack web application created by the team KYAC as a student capstone project at LEARN Academy. 
+**boopd** is a full-stack web application created by the team **KYAC** as a student capstone project at LEARN Academy. 
 
 Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
@@ -18,13 +18,23 @@ Every snoot deserves a boop.
 *We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
 
 <h1 align="center">Running the App</h1>
-
-Live Version | From the Repo
------------- | -------------
-link to the live version | 1. Clone this repo locally
-link to the live version | 2. Run in your bash/command line
-link to the live version | 3. Run  in your bash/command line
-
+<table align="center">
+  <tr>
+    <th>Live Version</th>
+    <th>From the Repo</th>
+  </tr>
+  <tr>
+    <td rowspan="4">link to the live version</td>
+    <td>1. Clone this repo locally</td>
+  </tr>
+  <tr>
+    <td>2.Run in your bash/command line</td>
+  </tr>
+    <tr>
+    <td>3. Run  in your bash/command line</td>
+  </tr>
+</table>
+ 
 ### >Dependencies
 - React
 - React-DOM
