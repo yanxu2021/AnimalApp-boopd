@@ -27,7 +27,7 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
 </p>
     
-## About the Project 
+<h1 align="center">About the Project </h1>
 **boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
 ```
@@ -117,8 +117,8 @@ Stretch Goals
 
 ![database schema](./img/db.png)
 
-### :computer:About Us:      *KYAC*
-
-**Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)
-
-### :computer_mouse:Contact Us: team.kyac@gmail.com
+<h1 align="center">About Us - KYAC</h1>
+<h2 align="center"**Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)</h2>
+<h1 align="center">Contact Us</h1>
+:computer::
+<h2 align="center">team.kyac@gmail.com</h2>
