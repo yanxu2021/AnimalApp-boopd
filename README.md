@@ -2,9 +2,7 @@
   <img width="250" src="./img/logo.jpg"/>
 </p>
 
-**boopd** is a full-stack web application created as the student capstone project at LEARN Academy. 
-
-Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
+**boopd** is a full-stack web application created as the student capstone project at LEARN Academy. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
 ```
 Every snoot deserves a boop.
