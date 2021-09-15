@@ -173,7 +173,7 @@ export default function PrimarySearchAppBar(props) {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-
+{/*             
             <IconButton
               edge="end"
               aria-label="account of current user"
@@ -183,10 +183,10 @@ export default function PrimarySearchAppBar(props) {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton>
+            </IconButton> */}
           </div>
           <div>
-            <IconButton
+            {/* <IconButton
               aria-label="show more"
               aria-controls={mobileMenuId}
               aria-haspopup="true"
@@ -194,7 +194,7 @@ export default function PrimarySearchAppBar(props) {
               color="inherit"
             >
               <MoreIcon />
-            </IconButton>
+            </IconButton> */}
             {loggedIn && <a href='/signout' className="nav-link">Sign Out</a>}
             {!loggedIn && <a href='/signin' className="nav-link">Sign In</a>}
             {!loggedIn && <a href='/signup' className="nav-link">Register</a>}
