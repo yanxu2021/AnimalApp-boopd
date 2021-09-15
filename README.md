@@ -81,7 +81,7 @@ Every snoot deserves a boop.
 
 More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
 
-### User Story and Wireframe
+### User Story 
 - [x] Sign-in Page
 - [x] Sign-up Page
 - [x] File Structure for Frontend
@@ -109,6 +109,7 @@ Stretch Goals
 - [x] User Terms& Conditions
 - [x] Search Bar
 
+### Wireframe
 ![wireframe](./img/wireframe.png)
 
 ### User Flow
