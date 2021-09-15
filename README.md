@@ -1,3 +1,4 @@
+<p align="center">
 # <img width="300" src="./img/logo.jpg"/>
 ## Running the App
 ### Live Version
@@ -135,3 +136,4 @@ Stretch Goals
 **Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)
 
 ### :computer_mouse:Contact Us: team.kyac@gmail.com
+</p>
