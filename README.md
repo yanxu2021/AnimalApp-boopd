@@ -1,10 +1,7 @@
 <p align="center">
   <img width="250" src="./img/logo.jpg"/>
+  `Every snoot deserves a boop.`
 </p>
-
-```
-                                                                      Every snoot deserves a boop.
-```
 
 <h1 align="center">About the App</h1>
 
