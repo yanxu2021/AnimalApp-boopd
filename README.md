@@ -7,9 +7,7 @@ We at KYAC Inc. have seen an increase of de-homed animals and struggling familie
 
 :computer:**About Us**: KYAC
 
-**Kelen Yafuso** (Tech Lead)  **Yan Xu** (Project Manager)
-
-**Amanda Ferguson** (Design Lead)  **Chris Luna** (Product Manager)
+**Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)
 
 :computer_mouse:**Contact Us**: team.kyac@gmail.com
 
