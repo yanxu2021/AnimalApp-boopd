@@ -43,7 +43,7 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
 
-<h1 align="center">Features </h1>
+<h1 align="center">App Features </h1>
 
 More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
 
@@ -126,7 +126,7 @@ Stretch Goals
 
 ![database schema](./img/db.png)
 
-<h2 align="center">Meet Team KYAC</h2>
+<h1 align="center">Meet Team KYAC</h1>
 
 > Kelen Yafuso - Tech Lead
 
