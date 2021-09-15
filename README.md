@@ -2,11 +2,12 @@
   <img width="250" src="./img/logo.jpg"/>
 </p>
 
-<h1 align="center">About the App</h1>
-
 ```
 Every snoot deserves a boop.
 ```
+
+<h1 align="center">About the App</h1>
+
 *We* at **KYAC** Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
 
 *With* our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. 
