@@ -1,7 +1,7 @@
 import React from "react"
 import about from '../components/images/about.png'
 
-import Accordion from '../components/Accordion'
+import FAQ from '../components/FAQ'
 
 class AboutUs extends React.Component {
   render() {
@@ -41,7 +41,7 @@ class AboutUs extends React.Component {
       <h3>F.A.Q</h3>
       <p>Answers to frequently asked questions can be found below, if you can't find the information you are looking for here please feel free to contact the team via email.</p>
       <br/>
-      <Accordion className="accordion"/>
+      <FAQ className="accordion"/>
       <br/>
       <h3>Contact us: team.kyac@gmail.com</h3>
       </div>

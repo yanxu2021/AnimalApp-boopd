@@ -35,8 +35,22 @@ padding: 0;
     font-size: large;
     font-weight: bold;
     color: #fe5f55;
-    padding: 10px;
- }
+    padding: 20px;
+    border-right: #bcbcbc;
+    border-width: 2px;
+
+    &:hover {
+      background-color: #117a8c;
+      color: white;   
+    }
+
+    &:active {
+      background-color: #fe5f55;
+      color: white; 
+    }
+  }
+ 
+
  /* ------HOME ---------*/
  .homeContainer{
   display: flex;

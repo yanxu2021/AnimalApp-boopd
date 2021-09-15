@@ -194,7 +194,7 @@ export default function PrimarySearchAppBar() {
             >
               <MoreIcon />
             </IconButton> */}
-            <NavLink to="/aboutus" className="nav-link">About</NavLink>
+            <NavLink to="/aboutus" className="nav-link">About Us</NavLink>
             {logged_in && <a href='/petnew' className="nav-link">Sign Out</a>}
             {logged_in && <a href='/signout' className="nav-link">Sign Out</a>}
             {!logged_in && <a href='/signin' className="nav-link">Sign In</a>}
