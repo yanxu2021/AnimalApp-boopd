@@ -19,16 +19,9 @@ margin: 0;
 padding: 0;
 }
 
-.page-body{
-  text-align: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
 
-.p-body{
-  text-align: left;
-  padding-left: 5rem;
-}
+
+
 
 /* -------NAV BAR-------- */
  .MuiAppBar-colorPrimary {
@@ -48,6 +41,90 @@ padding: 0;
     color: #fe5f55;
     padding: 10px;
  }
+
+
+/* ------ABOUT----------- */
+.page-body{
+  text-align: center;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-body{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3{
+    text-align: center;
+    padding: 30px;
+  }
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+
+  .blurb{
+    width: 120px;
+    height: 150px;
+    border-radius: 50px;
+    border-radius: 1px solid lightgreen;
+    margin: 30px;
+    position: relative;
+    
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: cover;
+    }
+
+    h5{
+      font-size: large;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    p{
+      text-align: center;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+  .section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 30px;
+
+    p{
+      padding-bottom: 15px;
+    }
+
+    .accordion {
+      padding-top: 50px !important;
+    }
+  }
+}
+}
+
 
  /* -------FOOTER--------- */
  footer {
