@@ -11,7 +11,7 @@ Every snoot deserves a boop.
 
 ### :computer:About Us: 
 
-<span style="color:#fe5f55">KYAC</span>
+<span style="color:blue">KYAC</span>
 
 **Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)
 
