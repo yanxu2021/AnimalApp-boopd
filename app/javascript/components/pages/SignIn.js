@@ -32,7 +32,6 @@ class SignIn extends React.Component{
         let { form }= this.state
         form[e.target.name] = e.target.value
         this.setState({form: form})
-        console.log(this.state)
     }
 
     handleSubmit = e => {
@@ -49,7 +48,6 @@ class SignIn extends React.Component{
             body: JSON.stringify({ user: data })
         })
         .then(response => {
-          console.log(response)
           this.props.history.push('/')
           window.location.reload(false)
         })
