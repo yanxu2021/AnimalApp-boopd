@@ -3,19 +3,22 @@
 </p>
 
 <h1 align="center">Running the App</h1>
-## Live Version
+
+### Live Version
 link to the live version
 
-<h2 align="center">From the Repo</h2>
-<h4 align="center">1. Clone this repo locally</h4>
-<h4 align="center">2. Run in your bash/command line</h4>
-<h4 align="center">3. Run  in your bash/command line</h4>
+### From the Repo
+1. Clone this repo locally
+2. Run in your bash/command line
+3. Run  in your bash/command line
 
-<h2 align="center">Dependencies</h2>
-<ul align="center">React</ul><ul align="center">React-DOM</ul><ul align="center">Webpack</ul><ul align="center">Material-Ui/Core</ul><ul align="center">Materical-Ui/Icon</ul>
+### Dependencies
+- React
+- React-DOM
+- Webpack
     
-<h2 align="center">Reporting a Vulnerability</h2>
-<p align="center">To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps. Thanks for helping to keep **boopd** secure.</p>
+### Reporting a Vulnerability
+To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps. Thanks for helping to keep **boopd** secure.
 
 <h2 align="center">Want to contribute to boopd?y</h2>
 <p align="center">
