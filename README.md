@@ -26,16 +26,14 @@ link to the live version
 - Webpack
 - Material-Ui/Core
 - Materical-Ui/Icon
-<br/>
-<br/>
 
-## :thought_balloon:Reporting a Vulnerability
+## Reporting a Vulnerability
 
 To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps.
 
 Thanks for helping to keep **boopd** secure.
 
-## :thought_balloon:Want to contribute to boopd?
+## Want to contribute to boopd?
 
 Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Check out the issues with the [good first issue]() and [help wanted]() label. We suggest also looking at the closed ones to get a sense of the kinds of issues you can tackle.
