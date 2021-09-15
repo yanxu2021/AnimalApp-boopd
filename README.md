@@ -7,7 +7,7 @@
 ```
 Every snoot deserves a boop.
 ```
-**We at KYAC Inc.** have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
+We at **KYAC** Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
 
 With our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. 
 
