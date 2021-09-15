@@ -1,4 +1,4 @@
-# ![logo](./img/logo.jpg) boopd
+# <img align="left" width="100" src="./img/logo.jpg" />
 ```
 Every snoot deserves a boop.
 ```
