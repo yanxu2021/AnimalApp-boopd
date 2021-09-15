@@ -14,13 +14,7 @@
 </p>
 
 <h1 align="center">Dependencies</h1>
-<p align="center">
-<ul>React</ul>
-<ul>React-DOM</ul>
-<ul>Webpack</ul>
-<ul>Material-Ui/Core</ul>
-<ul>Materical-Ui/Icon</ul>
-</p>
+<p align="center"><ul>React</ul><ul>React-DOM</ul><ul>Webpack</ul><ul>Material-Ui/Core</ul><ul>Materical-Ui/Icon</ul></p>
     
 <h2 align="center">Reporting a Vulnerability</h2>
 <p align="center">To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps. Thanks for helping to keep **boopd** secure.</p>
