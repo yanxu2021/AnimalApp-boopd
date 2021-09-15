@@ -124,4 +124,4 @@ Stretch Goals
 <h4 align="center">Chris Luna - Product Manager</h4>
 
 <h1 align="center">:computer:Contact Us</h1>
-<h2 align="center">team.kyac@gmail.com</h2>
+<h3 align="center">team.kyac@gmail.com</h3>
