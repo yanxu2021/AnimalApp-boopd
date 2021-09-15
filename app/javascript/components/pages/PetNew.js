@@ -272,10 +272,9 @@ class PetNew extends React.Component {
                 control={
                   <TextField
                   inputRef={this.medicalInput}
-                  onChange={this.handleChange}
-                  aria-label="Description"
+                  aria-label="Medical Issue Input"
                   variant="outlined"
-                  name="description"
+                  name="medical"
                   />
                 }
               />
