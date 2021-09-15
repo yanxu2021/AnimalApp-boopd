@@ -120,6 +120,7 @@ Stretch Goals
 ![database schema](./img/db.png)
 
 <h2 align="center">Meet Team KYAC</h2>
+
 > Kelen Yafuso - Tech Lead
 > Yan Xu - Project Manager
 > Amanda Ferguson - Design Lead
