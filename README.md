@@ -1,6 +1,6 @@
 # <img width="300" src="./img/logo.jpg"/>
-## 1. Running the App
-### 1.1 Live Version
+## Running the App
+### Live Version
 link to the live version
 
 ![Home page](./img/home.jpg)
@@ -15,12 +15,12 @@ link to the live version
 
 ![About Us Page]()
 
-### 1.2 From the Repo
+### From the Repo
 1. Clone this repo locally
 2. Run in your bash/command line
 3. Run  in your bash/command line
 
-### 1.3 Dependencies
+### Dependencies
 - React
 - React-DOM
 - Webpack
@@ -40,7 +40,7 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
 
-## 2. Capstone Project 
+## About the Project 
 **boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
 ```
@@ -52,7 +52,7 @@ Every snoot deserves a boop.
 
 *We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
 
-### 2.1 Project Requirements
+### Project Requirements
 - [x] React in Rails application
     - [x] As a developer, I need to add react to the Rails application and add Webpacker to compile JavaScript.
     - [x] As a developer, I need to create a full-stack application by adding a React component using a generate command. 
@@ -74,12 +74,12 @@ Every snoot deserves a boop.
 - [x] Team name
 - [x] "About Us" page
 
-### 2.2 Project Stretch Goals
+### Project Stretch Goals
 - [x] Responsive Design (include a phone view for example)
 - [x] Accessible design features
 - [x] Continuous Integration
 
-### 2.3 Things to Think About
+### Things to Think About
 > Step out of your comfort zone
 
 > Work with everyone in your group
@@ -90,9 +90,9 @@ Every snoot deserves a boop.
 
 > Make sure everyone feels included
 
-## 3. Features
+## Features
 More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
-### 3.1 User Story and Wireframe
+### User Story and Wireframe
 - [x] Sign-in Page
 - [x] Sign-up Page
 - [x] File Structure for Frontend
@@ -122,14 +122,13 @@ Stretch Goals
 
 ![wireframe](./img/wireframe.png)
 
-### 3.2 User Flow
+### User Flow
 
 ![user flow](./img/flow.png)
 
-### 3.3 Database Schema
+### Database Schema
 
 ![database schema](./img/db.png)
-
 
 ### :computer:About Us:      *KYAC*
 
