@@ -120,8 +120,8 @@ Stretch Goals
 ![database schema](./img/db.png)
 
 <h2 align="center">:computer:About Us and Contact Information- KYAC</h2>
-<h4 align="center">Kelen Yafuso - Tech Lead</h4> 
-<h4 align="center">Yan Xu - Project Manager</h4>
-<h4 align="center">Amanda Ferguson - Design Lead</h4>  
-<h4 align="center">Chris Luna - Product Manager</h4>
-<h3 align="center">team.kyac@gmail.com</h3>
+> Kelen Yafuso - Tech Lead
+> Yan Xu - Project Manager
+> Amanda Ferguson - Design Lead
+> Chris Luna - Product Manager
+<h3 align="center">Please feel free to contact us @team.kyac@gmail.com</h3>
