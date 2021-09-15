@@ -3,13 +3,13 @@
 ```
 Every snoot deserves a boop.
 ```
-We at KYAC Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
+*We* at KYAC Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
 
-With our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. 
+*With* our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. 
 
-We present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
+*We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
 
-### :computer:About Us: KYAC
+### :computer:About Us: <span style="color:#fe5f55">KYAC</span>
 
 **Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)
 
@@ -31,21 +31,25 @@ We present to you a nation-wide resource to find the animal that belongs in your
   - OR your choice
 - [ ] Testing - 60% code coverage
 - [ ] Deployed to Heroku
-- [x]A well written README (with link to live application)
+- [x] A well written README (with link to live application)
 - [x] Team name
 - [x] "About Us" page
 
 ### 1.2 Project Stretch Goals
-- Responsive Design (include a phone view for example)
-- Accessible design features
-- Continuous Integration
+- [x] Responsive Design (include a phone view for example)
+- [x] Accessible design features
+- [x] Continuous Integration
 
 ### 1.3 Things to Think About
-- Step out of your comfort zone
-- Work with everyone in your group
-- Work on a feature or part of the app you’re not completely comfortable with
-- Organization and clear communication - make sure everyone is on the same page
-- Make sure everyone feels included
+> Step out of your comfort zone
+
+> Work with everyone in your group
+
+> Work on a feature or part of the app you’re not completely comfortable with
+
+> Organization and clear communication - make sure everyone is on the same page
+
+> Make sure everyone feels included
 
 ## 2. Features
 More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
@@ -79,10 +83,15 @@ link to the live version
 
 ### 3.3 Dependencies
 > React
+
 > React-DOM
+
 > Webpack
+
 > Material-Ui/Core
+
 > Materical-Ui/Icon
+
 <br/>
 <br/>
 
