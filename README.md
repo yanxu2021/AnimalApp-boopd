@@ -7,8 +7,8 @@
 Live Version | From the Repo
 ------------ | -------------
 link to the live version | 1. Clone this repo locally
-link to the live versio| 2. Run in your bash/command line
-link to the live versio| 3. Run  in your bash/command line
+link to the live version | 2. Run in your bash/command line
+link to the live version | 3. Run  in your bash/command line
 
 ### >Dependencies
 - React
