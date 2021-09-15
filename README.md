@@ -6,42 +6,32 @@
 <h2 align="center">Live Version</h2>
 <p align="center">link to the live version</p>
 
-![Home page](./img/home.jpg)
-
-![Index Page]()
-
-![Register Page]()
-
-![Sign In Page]()
-
-![Show Page]()
-
-![About Us Page]()
-
-### From the Repo
+<h1 align="center">From the Repo</h1>
+<p align="center">
 1. Clone this repo locally
 2. Run in your bash/command line
 3. Run  in your bash/command line
+</p>
 
-### Dependencies
+<h1 align="center">Dependencies</h1>
+<p align="center">
 - React
 - React-DOM
 - Webpack
 - Material-Ui/Core
 - Materical-Ui/Icon
+</p>
     
-## Reporting a Vulnerability
+<h2 align="center">Reporting a Vulnerability</h2>
+<p align="center">To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps. Thanks for helping to keep **boopd** secure.</p>
 
-To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps.
-
-Thanks for helping to keep **boopd** secure.
-
-## Want to contribute to boopd?
-
+<h2 align="center">Want to contribute to boopd?y</h2>
+<p align="center">
 Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Check out the issues with the [good first issue]() and [help wanted]() label. We suggest also looking at the closed ones to get a sense of the kinds of issues you can tackle.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
+</p>
     
 ## About the Project 
 **boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
