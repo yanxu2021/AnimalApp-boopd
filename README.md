@@ -3,8 +3,8 @@
 </p>
 
 <h1 align="center">Running the App</h1>
-<p align="center">Live Version</p>
-link to the live version
+<h2 align="center">Live Version</h2>
+<p align="center">link to the live version</p>
 
 ![Home page](./img/home.jpg)
 
