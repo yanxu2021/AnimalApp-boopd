@@ -21,7 +21,7 @@
     <td>1. Clone this repo locally</td>
   </tr>
   <tr>
-    <td>2.Run in your bash/command line</td>
+    <td>2. Run in your bash/command line</td>
   </tr>
   <tr>
     <td>3. Run  in your bash/command line</td>
@@ -42,10 +42,6 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Check out the issues with the [good first issue]() and [help wanted]() label. We suggest also looking at the closed ones to get a sense of the kinds of issues you can tackle.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
-    
-
-
-
 
 <h1 align="center">Features </h1>
 
