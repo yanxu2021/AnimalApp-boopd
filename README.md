@@ -71,8 +71,9 @@ link to the live version
 - Webpack
 - Material-Ui/Core
 - Materical-Ui/Icon
-
----
+<br/>
+<br/>
+<br/>
 
 :thought_balloon:**Reporting a Vulnerability**
 
@@ -88,3 +89,5 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Check out the issues with the [good first issue]() and [help wanted]() label. We suggest also looking at the closed ones to get a sense of the kinds of issues you can tackle.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
+
+---
