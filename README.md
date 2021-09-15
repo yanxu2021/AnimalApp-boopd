@@ -4,13 +4,11 @@
 
 <h1 align="center">Running the App</h1>
 
-### >Live Version
-link to the live version
-
-### >From the Repo
-1. Clone this repo locally
-2. Run in your bash/command line
-3. Run  in your bash/command line
+### >Live Version | ### >From the Repo
+------------ | -------------
+link to the live version | 1. Clone this repo locally
+ | 2. Run in your bash/command line
+ | 3. Run  in your bash/command line
 
 ### >Dependencies
 - React
