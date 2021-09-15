@@ -129,4 +129,5 @@ Stretch Goals
 
 > Chris Luna - Product Manager
 
-<h3 align="center">:computer:Please feel free to contact us @team.kyac@gmail.com</h3>
+:computer:Please feel free to contact us @team.kyac@gmail.com
+
