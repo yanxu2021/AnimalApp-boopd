@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function PrimarySearchAppBar() {
+export default function PrimarySearchAppBar(props) {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -107,7 +107,7 @@ export default function PrimarySearchAppBar() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const [logged_in, SignIn, SignUp ] = useState(false);
+  const {loggedIn} = props
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -194,11 +194,9 @@ export default function PrimarySearchAppBar() {
             >
               <MoreIcon />
             </IconButton> */}
-            <NavLink to="/aboutus" className="nav-link">About Us</NavLink>
-            {logged_in && <a href='/petnew' className="nav-link">Sign Out</a>}
-            {logged_in && <a href='/signout' className="nav-link">Sign Out</a>}
-            {!logged_in && <a href='/signin' className="nav-link">Sign In</a>}
-            {!logged_in && <a href='/signup' className="nav-link">Sign Up</a>}
+            {loggedIn && <a href='/signout' className="nav-link">Sign Out</a>}
+            {!loggedIn && <a href='/signin' className="nav-link">Sign In</a>}
+            {!loggedIn && <a href='/signup' className="nav-link">Register</a>}
             <IconButton
             edge="end"
             className={classes.menuButton}
