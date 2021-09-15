@@ -1,4 +1,4 @@
-# boopd
+# ![logo](./img/logo.jpg) boopd
 ```
 Every snoot deserves a boop.
 ```
