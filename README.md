@@ -7,11 +7,11 @@
 <p align="center">link to the live version</p>
 
 <h2 align="center">From the Repo</h2>
-<p align="center">
+<h3 align="center">
 1. Clone this repo locally
 2. Run in your bash/command line
 3. Run  in your bash/command line
-</p>
+</h3>
 
 <h2 align="center">Dependencies</h2>
 <ul align="center">React</ul><ul align="center">React-DOM</ul><ul align="center">Webpack</ul><ul align="center">Material-Ui/Core</ul><ul align="center">Materical-Ui/Icon</ul>
