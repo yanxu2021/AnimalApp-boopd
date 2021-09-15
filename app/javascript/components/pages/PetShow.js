@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
-const PetShow = ({match, pets, loggedIn, history}) => {
+const PetShow = ({match, pets, history, readPet}) => {
   let pet = {}
   let livedWithAnimals, livedWithChildren
   if(pets) {
@@ -25,6 +25,21 @@ const PetShow = ({match, pets, loggedIn, history}) => {
   React.useEffect(() => {
     console.log(history)
   }, [pet])
+
+  const deletePet = (id) => {
+    fetch(`/pets/${id}`, {
+      headers: {
+          "Content-Type": "application/json"
+      },
+      method: "DELETE"
+    })
+    .then(response => { 
+      readPet()
+      history.push('/index')
+    })
+    .catch(errors => console.log("delete errors:", errors))
+  }
+  
   return(
     <Grid>
       {pet && (
@@ -78,6 +93,11 @@ const PetShow = ({match, pets, loggedIn, history}) => {
           <Grid>
             <Button onClick={() => history.push('/index')}>Back</Button>
             {pet.available == true && <Button>Adopt Me!</Button>}
+          </Grid>
+          <Grid>
+            <Button onClick={() => deletePet(pet.id)}>
+              Delete Pet
+            </Button>
           </Grid>
         </>
       ) }
