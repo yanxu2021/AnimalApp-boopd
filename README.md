@@ -20,13 +20,11 @@ link to the live version
 ### Reporting a Vulnerability
 To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps. Thanks for helping to keep **boopd** secure.
 
-<h2 align="center">Want to contribute to boopd?y</h2>
-<p align="center">
+### Want to contribute to boopd?y
 Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Check out the issues with the [good first issue]() and [help wanted]() label. We suggest also looking at the closed ones to get a sense of the kinds of issues you can tackle.
 - Our discussions/notes/roadmap: [boopd_notes.md]()
 - If you have already joined Slack, join our #kyac channel and say Hi!:smiley:
-</p>
     
 <h1 align="center">About the Project </h1>
 **boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
