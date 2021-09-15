@@ -24,13 +24,13 @@ Every snoot deserves a boop.
     <th>From the Repo</th>
   </tr>
   <tr>
-    <td rowspan="4">link to the live version</td>
+    <td rowspan="4"><a href="url">Live Version</a></td>
     <td>1. Clone this repo locally</td>
   </tr>
   <tr>
     <td>2.Run in your bash/command line</td>
   </tr>
-    <tr>
+  <tr>
     <td>3. Run  in your bash/command line</td>
   </tr>
 </table>
