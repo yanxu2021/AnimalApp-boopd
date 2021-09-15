@@ -1,5 +1,6 @@
 import React from "react"
-import logo from '../components/images/logo.png';
+import about from '../components/images/about.png'
+
 import Accordion from '../components/Accordion'
 
 class AboutUs extends React.Component {
@@ -12,22 +13,22 @@ class AboutUs extends React.Component {
       <p>something here about who we are...........</p>
         <div className="container">
           <div className="blurb">
-            <img src={logo} alt="logo"/>
+            <img src={about} alt="about"/>
             <h5>Kelen</h5>
             <p>some stuff about person</p>
           </div>
           <div className="blurb">
-            <img src={logo} alt="logo"/>
+            <img src={about} alt="about"/>
             <h5>Yan</h5>
             <p>some stuff about person</p>
           </div>
           <div className="blurb">
-            <img src={logo} alt="logo"/>
+            <img src={about} alt="about"/>
             <h5>Amanda</h5>
             <p>some stuff about person</p>
           </div>
           <div className="blurb">
-            <img src={logo} alt="logo"/>
+            <img src={about} alt="about"/>
             <h5>Chris</h5>
             <p>some stuff about person</p>
           </div>

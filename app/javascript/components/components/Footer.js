@@ -5,11 +5,11 @@ class Footer extends Component{
   render(){
     return(
       <footer>
-          <NavLink to="/aboutus">TERMS AND CONDITIONS</NavLink>
+          <NavLink to="/aboutus" className="footer-link">Terms and Conditions</NavLink>
           <br/>          
-          <NavLink to="/aboutus">ABOUT US</NavLink>
+          <NavLink to="/aboutus" className="footer-link">About Us</NavLink>
           <br/>
-          <NavLink to="/aboutus">COPYRIGHT@2021</NavLink>
+          <NavLink to="/aboutus" className="footer-link">Copyright@2021</NavLink>
           <br/>
       </footer>
     )

@@ -20,11 +20,11 @@ class AppRouter extends React.Component {
             <Router>
                 <Header/>
                 <Switch>
-                  <Route path='/' component={Home}/>
                   <Route path='/signup' component={SignUp}/>
                   <Route path='/signin' component={SignIn}/>
                   {this.props.loggedIn && <Route path='/petnew' component={PetNew}/> }
                   <Route path='/aboutus' component={AboutUs}/>
+                  <Route path='/' component={Home}/>
                   <Route component={NotFound}/>
                 </Switch>
                 <Footer/>
