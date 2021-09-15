@@ -1,4 +1,7 @@
-# <img width="300" src="./img/logo.jpg"/>
+<p align="center">
+  <img width="250" src="./img/logo.jpg"/>
+</p>
+
 ## Running the App
 ### Live Version
 link to the live version
