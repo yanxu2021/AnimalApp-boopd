@@ -9,9 +9,9 @@ import {
   import { withStyles } from '@material-ui/core/styles';
 
   const styles = () => ({
-    root: { 
-        position: 'absolute', 
-        left: '50%', 
+    root: {
+        position: 'absolute',
+        left: '50%',
         top: '50%',
         transform: 'translate(-50%, -50%)'
     }
@@ -48,10 +48,13 @@ class SignIn extends React.Component{
             },
             body: JSON.stringify({ user: data })
         })
-        .then(response => console.log(response))
+        .then(response => {
+          console.log(response)
+          this.props.history.push('/')
+        })
         .catch(err => console.log(err))
     }
-    
+
     render(){
         const {classes} = this.props
         return(

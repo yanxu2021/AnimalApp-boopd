@@ -12,6 +12,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import logo from '../components/images/logo.png';
+import { Button } from '@material-ui/core'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -108,6 +109,15 @@ export default function PrimarySearchAppBar(props) {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+  const signOut = (e) => {
+    fetch('/users/sign_out')
+      .then(() => {
+        props.history.push('/')
+        console.log('clicked')
+      })
+      .catch(err => console.log(err))
+  }
+
   const {loggedIn} = props
 
   const menuId = 'primary-search-account-menu';
@@ -174,6 +184,12 @@ export default function PrimarySearchAppBar(props) {
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
 
+            {loggedIn && <a href='/petindex' className="nav-link">See All Listings</a>}
+            {loggedIn && <a href='/petnew' className="nav-link">Create Listing</a>}
+            {loggedIn && <a href='/aboutus' className="nav-link">About Us</a>}
+            {loggedIn && <Button className="nav-link" variant="contained" onClick={signOut}>Sign Out</Button>}
+            {!loggedIn && <a href='/signin' className="nav-link">Sign In</a>}
+            {!loggedIn && <a href='/signup' className="nav-link">Register</a>}
             <IconButton
               edge="end"
               aria-label="account of current user"
@@ -195,9 +211,6 @@ export default function PrimarySearchAppBar(props) {
             >
               <MoreIcon />
             </IconButton>
-            {loggedIn && <a href='/signout' className="nav-link">Sign Out</a>}
-            {!loggedIn && <a href='/signin' className="nav-link">Sign In</a>}
-            {!loggedIn && <a href='/signup' className="nav-link">Register</a>}
             <IconButton
             edge="end"
             className={classes.menuButton}
