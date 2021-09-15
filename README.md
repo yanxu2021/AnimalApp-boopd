@@ -3,7 +3,9 @@
 ```
 Every snoot deserves a boop.
 ```
-We at KYAC Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. With our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. We present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
+We at KYAC Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
+
+With our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. We present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
 
 :computer:**About Us**: KYAC
 
@@ -83,7 +85,7 @@ link to the live version
 <br/>
 <br/>
 
-:thought_balloon:**Reporting a Vulnerability**
+## :thought_balloon:Reporting a Vulnerability
 
 To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps.
 
@@ -91,7 +93,7 @@ Thanks for helping to keep **boopd** secure.
 
 ---
 
-:thought_balloon:**Want to contribute to boopd?**
+## :thought_balloon:Want to contribute to boopd?
 
 Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 - Check out the issues with the [good first issue]() and [help wanted]() label. We suggest also looking at the closed ones to get a sense of the kinds of issues you can tackle.
