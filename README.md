@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="600" src="./img/logo.jpg"/>
-</p>
+# boopd
 
 <h1 align="center">About the App</h1>
 
@@ -9,6 +7,10 @@
 *With* our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. 
 
 *We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
+
+<p align="center">
+  <img width="800" src="./img/logo.jpg"/>
+</p>
 
 <h1 align="center">Running the App</h1>
 <table align="center">
