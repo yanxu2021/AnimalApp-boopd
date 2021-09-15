@@ -1,4 +1,4 @@
-# <img align="left" width="300" src="./img/logo.jpg"/>
+# <img width="300" src="./img/logo.jpg"/>
 
 ```
 Every snoot deserves a boop.
