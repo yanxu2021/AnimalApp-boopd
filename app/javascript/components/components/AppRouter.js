@@ -11,6 +11,7 @@ import SignIn from '../pages/SignIn'
 import PetNew from '../pages/PetNew'
 import NotFound from '../pages/NotFound'
 import AboutUs from '../pages/AboutUs'
+import Home from '../pages/Home'
 
 class AppRouter extends React.Component {
     render() {
@@ -19,6 +20,7 @@ class AppRouter extends React.Component {
             <Router>
                 <Header/>
                 <Switch>
+                  <Route path='/' component={Home}/>
                   <Route path='/signup' component={SignUp}/>
                   <Route path='/signin' component={SignIn}/>
                   {this.props.loggedIn && <Route path='/petnew' component={PetNew}/> }
