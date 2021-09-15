@@ -5,7 +5,9 @@ Every snoot deserves a boop.
 ```
 We at KYAC Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
 
-With our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. We present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
+With our pet-adoption-resource boopd, we connect struggling animals with benevolent humans who wish to care for them in these trying times. 
+
+We present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
 
 ### :computer:About Us: KYAC
 
@@ -17,21 +19,21 @@ With our pet-adoption-resource boopd, we connect struggling animals with benevol
 **boopd** is our capstone project at LEARN Academy. Students work in a small group to create a full-stack web application. Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
 ### 1.1 Project Requirements
-- React in Rails application
-- User authentication (register, login, logout)
-- Minimum of two database tables (one will be User)
-- Minimum of one external API
+- [x] React in Rails application
+- [x] User authentication (register, login, logout)
+- [x] Minimum of two database tables (one will be User)
+- [ ] Minimum of one external API
   - [ Spotify ](https://developer.spotify.com/documentation/web-api/)
   - [ Yelp Fusion ](https://www.yelp.com/fusion)
   - [ Eventbrite ](https://www.eventbrite.com/platform/api)
   - [ Weather Information ](https://weatherstack.com/documentation)
   - [ Fun Translations ](https://funtranslations.com/api/)
   - OR your choice
-- Testing - 60% code coverage
-- Deployed to Heroku
-- A well written README (with link to live application)
-- Team name
-- "About Us" page
+- [ ] Testing - 60% code coverage
+- [ ] Deployed to Heroku
+- [x]A well written README (with link to live application)
+- [x] Team name
+- [x] "About Us" page
 
 ### 1.2 Project Stretch Goals
 - Responsive Design (include a phone view for example)
@@ -76,13 +78,14 @@ link to the live version
 4. 
 
 ### 3.3 Dependencies
-- React
-- React-DOM
-- Webpack
-- Material-Ui/Core
-- Materical-Ui/Icon
+> React
+> React-DOM
+> Webpack
+> Material-Ui/Core
+> Materical-Ui/Icon
 <br/>
 <br/>
+
 ## :thought_balloon:Reporting a Vulnerability
 
 ---
