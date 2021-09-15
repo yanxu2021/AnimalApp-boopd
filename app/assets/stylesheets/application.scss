@@ -73,22 +73,23 @@ padding: 0;
 
  /* ------LOGO ANIMATION ------ */
  .logoContainer {
-  padding-top: 75px;
+  padding-top: 20px;
   width: 80vw;
   position: relative;
+  display: flex;
+  justify-content: center;
  }
  
 .boopd {
   display: grid inline-grid;
   position: relative;
-  
+  width: 500px;
 
   .iconContainer{
     position: absolute;
     top: -1vh;
-    right: 30.75vw;
-    display: flex;
-    flex-direction: column;
+    right: 122px;
+    display: inline-block;
 
     .icon{
       width: 45px;
