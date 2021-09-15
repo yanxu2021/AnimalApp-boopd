@@ -1,4 +1,6 @@
-# boopd
+<p align="center">
+  <img width="100%" src="./img/logo.jpg"/>
+</p>
 
 <h1 align="center">About the App</h1>
 
@@ -8,9 +10,7 @@
 
 *We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
 
-<p align="center">
-  <img width="800" src="./img/logo.jpg"/>
-</p>
+
 
 <h1 align="center">Running the App</h1>
 <table align="center">
