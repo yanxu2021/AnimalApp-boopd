@@ -51,6 +51,7 @@ class SignIn extends React.Component{
         .then(response => {
           console.log(response)
           this.props.history.push('/')
+          window.location.reload(false)
         })
         .catch(err => console.log(err))
     }

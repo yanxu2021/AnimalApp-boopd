@@ -53,7 +53,10 @@ class SignUp extends Component{
       },
       body: JSON.stringify({ user: data })
     })
-      .then(response => this.props.history.push('/'))
+      .then(response => {
+        this.props.history.push('/')
+        window.location.reload(false)
+      })
       .catch(err => console.log(err))
   }
 

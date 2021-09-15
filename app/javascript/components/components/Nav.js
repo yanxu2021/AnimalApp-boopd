@@ -113,7 +113,7 @@ export default function PrimarySearchAppBar(props) {
     fetch('/users/sign_out')
       .then(() => {
         props.history.push('/')
-        console.log('clicked')
+        window.location.reload(false)
       })
       .catch(err => console.log(err))
   }
