@@ -21,9 +21,9 @@ const useStyles = makeStyles({
 
 export default function MediaCard(props) {
     const classes = useStyles();
-    
+
     const {pets} = props;
-    
+
     return (
         <>
         {pets && pets.map(pet =>{
@@ -45,7 +45,7 @@ export default function MediaCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
+              <Button size="small" color="primary" onClick={() => props.history.push(`/petshow/${pet.id}`)}>
                 My Story
                 </Button>
             </CardActions>

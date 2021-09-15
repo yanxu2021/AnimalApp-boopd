@@ -12,6 +12,7 @@ import PetNew from '../pages/PetNew'
 import Index from '../pages/Index'
 import NotFound from '../pages/NotFound'
 import AboutUs from '../pages/AboutUs'
+import PetShow from '../pages/PetShow'
 
 class AppRouter extends React.Component {
     constructor(props){
@@ -20,11 +21,11 @@ class AppRouter extends React.Component {
           pets: []
         }
       }
-    
+
       componentDidMount(){
         this.readPet()
       }
-    
+
       readPet = () => {
         fetch("/pets")
         .then(response => response.json())
@@ -35,6 +36,7 @@ class AppRouter extends React.Component {
 
     render() {
         console.log(this.props.loggedIn)
+        const { pets } = this.state
         return(
             <Router>
                 <Header {...this.props} />
@@ -43,8 +45,11 @@ class AppRouter extends React.Component {
                   <Route path='/signup' component={SignUp}/>
                   <Route path='/signin' component={SignIn}/>
                   {this.props.loggedIn && <Route path='/petnew' component={PetNew}/> }
-                  <Route path='/index' render={()=> {
-                      return <Index {...this.props} pets={this.state.pets} />
+                  <Route path='/index' render={(props)=> {
+                      return <Index {...this.props} pets={this.state.pets} history={props.history}/>
+                  }}/>
+                  <Route path='/petshow/:id' render={(props) => {
+                    return <PetShow history={props.history} loggedIn={this.props.loggedIn} pets={pets} match={props.match} />
                   }}/>
                   <Route path='/aboutus' component={AboutUs}/>
                   <Route component={NotFound}/>
