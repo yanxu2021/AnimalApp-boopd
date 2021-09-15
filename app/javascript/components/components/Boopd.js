@@ -9,7 +9,7 @@ import d from "../components/images/d.png"
 export default function Boopd() {
     return (
         <div className="logoContainer">
-            <div className="boopd">
+            <div className="boopd-desktop">
                 <img src={b} alt="b" className="b"/>
                 <img src={o} alt="" className="o"/>
                 <img src={o2} alt="o" className="o2"/>
