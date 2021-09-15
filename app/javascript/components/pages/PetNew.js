@@ -48,7 +48,6 @@ class PetNew extends React.Component {
       pet[name]=value
     }
     this.setState({pet})
-    console.log(this.state)
   }
 
   handleMedical = (e) => {
@@ -83,7 +82,6 @@ class PetNew extends React.Component {
       lived_with_children: pet.livedWithChildren,
       medical: pet.medical
     }
-    console.log(pet)
     fetch('/pets', {
       method: 'POST',
         headers: {
@@ -92,8 +90,7 @@ class PetNew extends React.Component {
       body: JSON.stringify({ pet: data })
     })
       .then(response => {
-        console.log(response)
-        this.props.history.push('/')
+        this.props.history.push('/petindex')
       })
       .catch(err => console.log(err))
   }

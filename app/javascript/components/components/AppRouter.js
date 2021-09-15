@@ -14,6 +14,7 @@ import NotFound from '../pages/NotFound'
 import AboutUs from '../pages/AboutUs'
 import Home from '../pages/Home'
 import PetShow from '../pages/PetShow'
+import { createBrowserHistory } from 'history'
 
 class AppRouter extends React.Component {
     constructor(props){
@@ -30,25 +31,24 @@ class AppRouter extends React.Component {
       readPet = () => {
         fetch("/pets")
         .then(response => response.json())
-        .then(payload => {this.setState({pets: payload})
-        console.log(payload)})
+        .then(payload => this.setState({pets: payload}))
         .catch(errors => console.log("index errors:", errors))
       }
 
-      
+
 
     render() {
-        console.log(this.props.loggedIn)
-        const { pets } = this.state
+      const { pets } = this.state
+      const history = createBrowserHistory()
         return(
             <Router>
-                <Header {...this.props} />
+                <Header {...this.props} history={history}/>
                 <div style = {{paddingTop:"90px", paddingBottom: "90px"}}>
                 <Switch>
                   <Route path='/signup' component={SignUp}/>
                   <Route path='/signin' component={SignIn}/>
                   {this.props.loggedIn && <Route path='/petnew' component={PetNew}/> }
-                  <Route path='/index' render={(props)=> {
+                  <Route path='/petindex' render={(props)=> {
                       return <Index {...this.props} pets={this.state.pets} history={props.history}/>
                   }}/>
                   <Route path='/petshow/:id' render={(props) => {
