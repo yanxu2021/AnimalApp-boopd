@@ -2,10 +2,6 @@
   <img width="250" src="./img/logo.jpg"/>
 </p>
 
-**boopd** is a full-stack web application created by the team **KYAC** as a student capstone project at LEARN Academy. 
-
-Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
-
 <h1 align="center">About the App</h1>
 
 ```
@@ -57,6 +53,10 @@ Check out our [CONTRIBUTING.md]() to get started with setting up the repo.
 <h1 align="center">Features </h1>
 
 More details please check [here](https://spark.adobe.com/page/uDyY6hGN9zU6O/) 
+
+**boopd** is a full-stack web application created by the team **KYAC** as a student capstone project at LEARN Academy. 
+
+Acting as a development team, the students use agile and scrum project management techniques to plan, wireframe, code, and deploy an application.
 
 ### Project Requirements
 - [x] React in Rails application
