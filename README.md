@@ -3,7 +3,7 @@
 </p>
 
 ```
-Every snoot deserves a boop.
+                                                                      Every snoot deserves a boop.
 ```
 
 <h1 align="center">About the App</h1>
