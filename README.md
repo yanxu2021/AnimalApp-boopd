@@ -9,7 +9,9 @@ Every snoot deserves a boop.
 
 *We* present to you a nation-wide resource to find the animal that belongs in your home, or find the home that is worthy of your beloved pet that you can no longer care for.
 
-### :computer:About Us: <span style="color:#fe5f55">KYAC</span>
+### :computer:About Us: 
+
+<span style="color:#fe5f55">KYAC</span>
 
 **Kelen Yafuso** (*Tech Lead*)  **Yan Xu** (*Project Manager*)  **Amanda Ferguson** (*Design Lead*)  **Chris Luna** (*Product Manager*)
 
@@ -79,19 +81,13 @@ link to the live version
 1. Clone this repo locally
 2. Run in your bash/command line
 3. Run  in your bash/command line
-4. 
 
 ### 3.3 Dependencies
-> React
-
-> React-DOM
-
-> Webpack
-
-> Material-Ui/Core
-
-> Materical-Ui/Icon
-
+- React
+- React-DOM
+- Webpack
+- Material-Ui/Core
+- Materical-Ui/Icon
 <br/>
 <br/>
 
