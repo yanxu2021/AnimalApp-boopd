@@ -11,11 +11,6 @@ class Home extends React.Component {
         <h1>Every snoot deserves a boop.</h1>
         <h3>A nation-wide resource for helping pets in need of assistance with medical bills, supplies, fostering, adoption and compassionate re-homing.</h3>
     </div>
-    <div className="homeContainer-mobile" >
-        <Boopd/>
-        <h1>Every snoot deserves a boop.</h1>
-        <h3>A nation-wide resource for helping pets in need of assistance with medical bills, supplies, fostering, adoption and compassionate re-homing.</h3>
-</div>
     </>
     )
   }
