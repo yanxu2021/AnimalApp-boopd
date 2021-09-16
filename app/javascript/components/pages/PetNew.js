@@ -26,7 +26,7 @@ class PetNew extends React.Component {
         behavior:"",
         city:"",
         state:"",
-        available:true,
+        available:"",
         description:"",
         housetrained:false,
         vaccinations:false,
@@ -48,13 +48,6 @@ class PetNew extends React.Component {
       pet[name]=value
     }
     this.setState({pet})
-    console.log(this.state)
-  }
-
-  handleAvailability = (e) => {
-    const value = e.target.value === "true"
-    let { pet } = this.state
-    this.setState({ pet: { ...pet, available: value } })
   }
 
   handleMedical = (e) => {
@@ -89,7 +82,6 @@ class PetNew extends React.Component {
       lived_with_children: pet.livedWithChildren,
       medical: pet.medical
     }
-    console.log(pet)
     fetch('/pets', {
       method: 'POST',
         headers: {
@@ -98,8 +90,7 @@ class PetNew extends React.Component {
       body: JSON.stringify({ pet: data })
     })
       .then(response => {
-        console.log(response)
-        this.props.history.push('/')
+        this.props.history.push('/petindex')
       })
       .catch(err => console.log(err))
   }
@@ -198,7 +189,7 @@ class PetNew extends React.Component {
                 <RadioGroup
                   aria-label="availability"
                   name="available"
-                  onChange={this.handleAvailability}
+                  onChange={this.handleChange}
                 >
                   <FormControlLabel
                   value="true"
@@ -278,10 +269,9 @@ class PetNew extends React.Component {
                 control={
                   <TextField
                   inputRef={this.medicalInput}
-                  onChange={this.handleChange}
-                  aria-label="Description"
+                  aria-label="Medical Issue Input"
                   variant="outlined"
-                  name="description"
+                  name="medical"
                   />
                 }
               />

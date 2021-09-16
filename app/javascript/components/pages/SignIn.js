@@ -9,9 +9,9 @@ import {
   import { withStyles } from '@material-ui/core/styles';
 
   const styles = () => ({
-    root: { 
-        position: 'absolute', 
-        left: '50%', 
+    root: {
+        position: 'absolute',
+        left: '50%',
         top: '50%',
         transform: 'translate(-50%, -50%)'
     }
@@ -32,7 +32,6 @@ class SignIn extends React.Component{
         let { form }= this.state
         form[e.target.name] = e.target.value
         this.setState({form: form})
-        console.log(this.state)
     }
 
     handleSubmit = e => {
@@ -48,10 +47,13 @@ class SignIn extends React.Component{
             },
             body: JSON.stringify({ user: data })
         })
-        .then(response => console.log(response))
+        .then(response => {
+          this.props.history.push('/')
+          window.location.reload(false)
+        })
         .catch(err => console.log(err))
     }
-    
+
     render(){
         const {classes} = this.props
         return(
