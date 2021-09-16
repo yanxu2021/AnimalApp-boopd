@@ -1,8 +1,6 @@
 <p align="center">
-  <img width="80%" src="./img/logo.jpg"/>
+  <img width="100%" src="./img/logo.jpg"/>
 </p>
-
-<h1 align="center">About the App</h1>
 
 *We* at **KYAC** Inc. have seen an increase of de-homed animals and struggling families during the pandemic. It is our vision to be part of the solution. 
 
