@@ -291,6 +291,19 @@ padding: 0;
   color: black !important;
 }
 
+/*------INPUT--------*/
+
+.MuiInputBase-root {
+  background-color: white !important;
+}
+.MuiInputBase-input {
+  padding: 0px;
+  border-radius: 0px !important;
+}
+.MuiOutlinedInput-input {
+  padding: 5px;
+}
+
 /* ----ANIMATIONS ----- */
 
 @keyframes bounce {
