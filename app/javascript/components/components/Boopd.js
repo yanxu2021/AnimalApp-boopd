@@ -5,11 +5,12 @@ import o2 from "../components/images/o2.png"
 import p from "../components/images/p.png"
 import icon from "../components/images/icon.png"
 import d from "../components/images/d.png"
+import bicon from "../components/images/boopd-icon.png"
 
 export default function Boopd() {
     return (
         <div className="logoContainer">
-            <div className="boopd-desktop">
+            <div className="boopd-desktop" id="boopd-desktop">
                 <img src={b} alt="b" className="b"/>
                 <img src={o} alt="" className="o"/>
                 <img src={o2} alt="o" className="o2"/>
@@ -18,6 +19,9 @@ export default function Boopd() {
                 <img src={icon} alt="icon" className="icon"/>
                 </div>
                 <img src={d} alt="d" className="d"/>
+            </div>
+            <div className="boopd-mobile" id="boopd-mobile">
+                <img src={bicon} alt="" className="bicon"/>
             </div>
         </div>
     )
