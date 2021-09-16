@@ -24,7 +24,6 @@ const PetEdit = (props) => {
         setPet({...payload, livedWithChildren: payload.lived_with_children, livedWithAnimals: payload.lived_with_animals})
       })
       .catch(err => console.log(err))
-    console.log(pet)
   }, [loaded])
 
   const handleChange = (e) => {
