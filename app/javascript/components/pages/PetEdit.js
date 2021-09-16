@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Grid,
   TextField,
@@ -12,70 +12,44 @@ import {
   Checkbox
 } from "@material-ui/core";
 
-class PetEdit extends React.Component {
-  constructor(props) {
-    super(props)
-    this.medicalInput= React.createRef()
-    this.state={
-      pet:{
-        name:"",
-        age:"",
-        sex:"",
-        species:"",
-        breed:"",
-        behavior:"",
-        city:"",
-        state:"",
-        available:"",
-        description:"",
-        housetrained:false,
-        vaccinations:false,
-        livedWithAnimals:false,
-        fixed:false,
-        declawed:false,
-        livedWithChildren:false,
-        medical:[]
-      },
-      loaded:0
-    }
-  }
+const PetEdit = (props) => {
+  const [pet, setPet] = useState({})
+  const [loaded, setLoaded] = useState(0)
+  const [medical, setMedical] = useState('')
 
-  componentDidUpdate = () => {
-    let pet  
-    if (!this.state.loaded) { 
-      console.log(this.props.pets)
-      pet = this.props.pets.find((p)=>{
-        return p.id === +this.props.match.params.id
+  useEffect(() => {
+    fetch(`/pets/${props.match.params.id}`)
+      .then(response => response.json())
+      .then(payload => {
+        setPet({...payload, livedWithChildren: payload.lived_with_children, livedWithAnimals: payload.lived_with_animals})
       })
-      pet && this.setState({pet, loaded:1})
-      console.log(pet)
-        }
-    }
+      .catch(err => console.log(err))
+    console.log(pet)
+  }, [loaded])
 
-  handleChange = (e) => {
-    let { pet } = this.state
+  const handleChange = (e) => {
+    let petEditing = pet
     const { name, value } = e.target
     if(name == "housetrained" || name == "vaccinations" || name == "livedWithAnimals" || name == "fixed" || name == "declawed" || name == "livedWithChildren"){
-      pet[name] = e.target.checked
+      petEditing[name] = e.target.checked
     } else {
-      pet[name]=value
+      petEditing[name]=value
     }
-    this.setState({...this.state, pet})
+    setPet({...pet, ...petEditing})
+    console.log(pet)
   }
 
-  handleMedical = (e) => {
-    //get value from medical field
-    let value = this.medicalInput.current.value
-    //add value to pet medical array
-    let pet = this.state.pet
-    pet.medical.push(value)
-    this.setState({pet})
-    this.medicalInput.current.value = ""
+  const handleMedicalInput = e => {
+    setMedical(e.target.value)
   }
 
-  handleSubmit = (e) => {
+  const handleMedical = (e) => {
+    setPet({...pet, medical: [...pet.medical, e.target.value] })
+    setMedical('')
+  }
+
+  const handleSubmit = (e) => {
     e.preventDefault()
-    let { pet } = this.state
     let data = {
       name: pet.name,
       age: pet.age,
@@ -95,7 +69,7 @@ class PetEdit extends React.Component {
       lived_with_children: pet.livedWithChildren,
       medical: pet.medical
     }
-    fetch(`/pets/${this.props.match.params.id}`, {
+    fetch(`/pets/${props.match.params.id}`, {
       method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
@@ -103,222 +77,221 @@ class PetEdit extends React.Component {
       body: JSON.stringify({ pet: data })
     })
       .then(response => {
-        this.props.history.push('/petindex')
+        props.history.push('/petindex')
       })
       .catch(err => console.log(err))
   }
 
-  render() {
-    let pet=this.state.pet
-    return (
-      <>
-        <Grid>
-          <FormControl>
+  return (
+    <>
+      {pet.id && (
+      <Grid>
+        <FormControl>
+          <Grid>
             <Grid>
-              <Grid>
-                <FormLabel>Name</FormLabel>
-                <TextField
-                  value={pet.name}
-                  aria-label="Name"
-                  variant="outlined"
-                  name="name"
-                  onChange={this.handleChange}
-                />
-              </Grid>
-              <Grid>
-                <FormLabel>Age</FormLabel>
-                <TextField
-                  value={pet.age}
-                  aria-label="Age"
-                  variant="outlined"
-                  name="age"
-                  onChange={this.handleChange}
-                />
-              </Grid>
-              <Grid>
-                <RadioGroup
-                  value={pet.sex}
-                  aria-label="sex"
-                  name="sex"
-                  onChange={this.handleChange}
-                >
-                  <FormControlLabel
-                    value="Male"
-                    control={<Radio />}
-                    label="Male"
-                    aria-label="Male"
-                  />
-                  <FormControlLabel
-                    value="Female"
-                    control={<Radio />}
-                    label="Female"
-                    aria-label="Female"
-                  />
-                </RadioGroup>
-              </Grid>
-              <Grid>
-                <FormLabel>Species</FormLabel>
-                <TextField
-                  value={pet.species}
-                  aria-label="Species"
-                  variant="outlined"
-                  name="species"
-                  onChange={this.handleChange}
-                />
-              </Grid>
-              <Grid>
-                <FormLabel>Breed</FormLabel>
-                <TextField
-                  value={pet.breed}
-                  aria-label="Breed"
-                  variant="outlined"
-                  name="breed"
-                  onChange={this.handleChange}
-                />
-              </Grid>
-              <Grid>
-                <FormLabel>Behavior/Personality</FormLabel>
-                <TextField
-                  value={pet.behavior}
-                  aria-label="Behavior/Personality"
-                  variant="outlined"
-                  name="behavior"
-                  onChange={this.handleChange}
-                />
-              </Grid>
-              <Grid>
-                <FormLabel>City</FormLabel>
-                <TextField
-                  value={pet.city}
-                  aria-label="City"
-                  variant="outlined"
-                  name="city"
-                  onChange={this.handleChange}
-                />
-              </Grid>
-              <Grid>
-                <FormLabel>State</FormLabel>
-                <TextField
-                  value={pet.state}
-                  aria-label="State"
-                  variant="outlined"
-                  name="state"
-                  onChange={this.handleChange}
-                />
-              </Grid>
-              <Grid>
-                <RadioGroup
-                  value={pet.availability}
-                  aria-label="availability"
-                  name="available"
-                  onChange={this.handleChange}
-                >
-                  <FormControlLabel
-                  value="true"
-                  control={<Radio checked={pet.availability === 'true'} />}
-                  label="Available Now"
-                  aria-label="Available Now"
-                  />
-                  <FormControlLabel
-                  value="false"
-                  control={<Radio checked={pet.availability === 'false'} />}
-                  label="Not Available"
-                  aria-label="Not Available"
-                  />
-                </RadioGroup>
-              </Grid>
-              <Grid>
-                <FormLabel>Description</FormLabel>
-                <TextField
-                  value={pet.description}
-                  aria-label="Description"
-                  variant="outlined"
-                  name="description"
-                  onChange={this.handleChange}
-                  multiline
-                  rows={4}
-                />
-              </Grid>
-              <FormControl>
-                <Grid>
-                  <FormControlLabel
-                  control={<Checkbox 
-                  checked={pet.housetrained}
-                  onChange={this.handleChange}
-                  name="housetrained"/>}
-                  label="Housetrained"
-                  />
-                  <FormControlLabel
-                  control={<Checkbox 
-                  checked={pet.vaccinations}
-                  onChange={this.handleChange}
-                  name="vaccinations"/>}
-                  label="Vaccinations Current"
-                  />
-                  <FormControlLabel
-                  control={<Checkbox 
-                  checked={pet.livedWithAnimals}
-                  onChange={this.handleChange}
-                  name="livedWithAnimals"/>}
-                  label="Lived With Animals"
-                  />
-                  <FormControlLabel
-                  control={<Checkbox 
-                  checked={pet.fixed}
-                  onChange={this.handleChange}
-                  name="fixed"/>}
-                  label="Spayed/Neutered"
-                  />
-                  <FormControlLabel
-                  control={<Checkbox 
-                  checked={pet.declawed}
-                  onChange={this.handleChange}
-                  name="declawed"/>}
-                  label="Declawed(Cats Only)"
-                  />
-                  <FormControlLabel
-                  control={<Checkbox 
-                  checked={pet.livedWithChildren}
-                  onChange={this.handleChange}
-                  name="livedWithChildren"/>}
-                  label="Lived With Children"
-                  />
-                </Grid>
-              </FormControl>
-              <FormLabel>Please List Medical Issues</FormLabel>
-              {pet.medical && pet.medical.map((issue, index)=>{
-                return(
-                  <div key={index}>
-                    <FormLabel>Issue {index+1}</FormLabel>
-                    <Typography>{issue}</Typography>
-                  </div>
-                )
-              })}
-              <FormControlLabel
-                control={
-                  <TextField
-                  inputRef={this.medicalInput}
-                  aria-label="Medical Issue Input"
-                  variant="outlined"
-                  name="medical"
-                  />
-                }
+              <FormLabel>Name</FormLabel>
+              <TextField
+                defaultValue={pet.name}
+                aria-label="Name"
+                variant="outlined"
+                name="name"
+                onChange={handleChange}
               />
-              <Button onClick={this.handleMedical} variant="outlined">Add New</Button>
             </Grid>
             <Grid>
-              <Button onClick={()=> {this.props.history.push(`/petshow/${this.props.match.params.id}`)}}
-                variant="outlined">
-                Cancel
-              </Button>
-              <Button onClick={this.handleSubmit} variant="contained">
-                Submit
-              </Button>
+              <FormLabel>Age</FormLabel>
+              <TextField
+                defaultValue={pet.age}
+                aria-label="Age"
+                variant="outlined"
+                name="age"
+                onChange={handleChange}
+              />
             </Grid>
-          </FormControl>
-        </Grid>
-      </>
-    );
-  }
+            <Grid>
+              <RadioGroup
+                defaultValue={pet.sex}
+                aria-label="sex"
+                name="sex"
+                onChange={handleChange}
+              >
+                <FormControlLabel
+                  value="Male"
+                  control={<Radio />}
+                  label="Male"
+                  aria-label="Male"
+                />
+                <FormControlLabel
+                  value="Female"
+                  control={<Radio />}
+                  label="Female"
+                  aria-label="Female"
+                />
+              </RadioGroup>
+            </Grid>
+            <Grid>
+              <FormLabel>Species</FormLabel>
+              <TextField
+                defaultValue={pet.species}
+                aria-label="Species"
+                variant="outlined"
+                name="species"
+                onChange={handleChange}
+              />
+            </Grid>
+            <Grid>
+              <FormLabel>Breed</FormLabel>
+              <TextField
+                defaultValue={pet.breed}
+                aria-label="Breed"
+                variant="outlined"
+                name="breed"
+                onChange={handleChange}
+              />
+            </Grid>
+            <Grid>
+              <FormLabel>Behavior/Personality</FormLabel>
+              <TextField
+                defaultValue={pet.behavior}
+                aria-label="Behavior/Personality"
+                variant="outlined"
+                name="behavior"
+                onChange={handleChange}
+              />
+            </Grid>
+            <Grid>
+              <FormLabel>City</FormLabel>
+              <TextField
+                defaultValue={pet.city}
+                aria-label="City"
+                variant="outlined"
+                name="city"
+                onChange={handleChange}
+              />
+            </Grid>
+            <Grid>
+              <FormLabel>State</FormLabel>
+              <TextField
+                defaultValue={pet.state}
+                aria-label="State"
+                variant="outlined"
+                name="state"
+                onChange={handleChange}
+              />
+            </Grid>
+            <Grid>
+              <RadioGroup
+                defaultValue={pet.availability}
+                aria-label="availability"
+                name="available"
+                onChange={handleChange}
+              >
+                <FormControlLabel
+                value="true"
+                control={<Radio />}
+                label="Available Now"
+                aria-label="Available Now"
+                />
+                <FormControlLabel
+                value="false"
+                control={<Radio />}
+                label="Not Available"
+                aria-label="Not Available"
+                />
+              </RadioGroup>
+            </Grid>
+            <Grid>
+              <FormLabel>Description</FormLabel>
+              <TextField
+                defaultValue={pet.description}
+                aria-label="Description"
+                variant="outlined"
+                name="description"
+                onChange={handleChange}
+                multiline
+                rows={4}
+              />
+            </Grid>
+            <FormControl>
+              <Grid>
+                <FormControlLabel
+                control={<Checkbox
+                checked={pet.housetrained}
+                onChange={handleChange}
+                name="housetrained"/>}
+                label="Housetrained"
+                />
+                <FormControlLabel
+                control={<Checkbox
+                checked={pet.vaccinations}
+                onChange={handleChange}
+                name="vaccinations"/>}
+                label="Vaccinations Current"
+                />
+                <FormControlLabel
+                control={<Checkbox
+                checked={pet.livedWithAnimals}
+                onChange={handleChange}
+                name="livedWithAnimals"/>}
+                label="Lived With Animals"
+                />
+                <FormControlLabel
+                control={<Checkbox
+                checked={pet.fixed}
+                onChange={handleChange}
+                name="fixed"/>}
+                label="Spayed/Neutered"
+                />
+                <FormControlLabel
+                control={<Checkbox
+                checked={pet.declawed}
+                onChange={handleChange}
+                name="declawed"/>}
+                label="Declawed(Cats Only)"
+                />
+                <FormControlLabel
+                control={<Checkbox
+                checked={pet.livedWithChildren}
+                onChange={handleChange}
+                name="livedWithChildren"/>}
+                label="Lived With Children"
+                />
+              </Grid>
+            </FormControl>
+            <FormLabel>Please List Medical Issues</FormLabel>
+            {pet.medical && pet.medical.map((issue, index)=>{
+              return(
+                <div key={index}>
+                  <FormLabel>Issue {index+1}</FormLabel>
+                  <Typography>{issue}</Typography>
+                </div>
+              )
+            })}
+            <FormControlLabel
+              control={
+                <TextField
+                onChange={handleMedicalInput}
+                aria-label="Medical Issue Input"
+                variant="outlined"
+                name="medical"
+                />
+              }
+            />
+            <Button onClick={handleMedical} variant="outlined">Add New</Button>
+          </Grid>
+          <Grid>
+            <Button onClick={()=> {props.history.push(`/petshow/${props.match.params.id}`)}}
+              variant="outlined">
+              Cancel
+            </Button>
+            <Button onClick={handleSubmit} variant="contained">
+              Submit
+            </Button>
+          </Grid>
+        </FormControl>
+      </Grid>
+      )}
+    </>
+  );
 }
 export default PetEdit;
