@@ -91,6 +91,7 @@ class PetNew extends React.Component {
     })
       .then(response => {
         this.props.history.push('/petindex')
+        this.props.readPet()
       })
       .catch(err => console.log(err))
   }

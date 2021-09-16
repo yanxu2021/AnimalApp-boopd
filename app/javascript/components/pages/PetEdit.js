@@ -12,9 +12,31 @@ import {
   Checkbox
 } from "@material-ui/core";
 
+const formatFormData = (pet) => {
+  const data = {
+    name: pet.name,
+    age: pet.age,
+    sex: pet.sex,
+    species: pet.species,
+    breed: pet.breed,
+    behavior: pet.behavior,
+    city: pet.city,
+    state: pet.state,
+    available: pet.available,
+    description: pet.description,
+    housetrained: pet.housetrained,
+    vaccinations: pet.vaccinations,
+    lived_with_animals: pet.livedWithAnimals,
+    fixed: pet.fixed,
+    declawed: pet.declawed,
+    lived_with_children: pet.livedWithChildren,
+    medical: pet.medical
+  }
+  return data
+}
+
 const PetEdit = (props) => {
   const [pet, setPet] = useState({})
-  const [loaded, setLoaded] = useState(0)
   const [medical, setMedical] = useState('')
 
   useEffect(() => {
@@ -24,18 +46,20 @@ const PetEdit = (props) => {
         setPet({...payload, livedWithChildren: payload.lived_with_children, livedWithAnimals: payload.lived_with_animals})
       })
       .catch(err => console.log(err))
-  }, [loaded])
+  }, [])
 
   const handleChange = (e) => {
-    let petEditing = pet
+    const petEditing = pet
     const { name, value } = e.target
-    if(name == "housetrained" || name == "vaccinations" || name == "livedWithAnimals" || name == "fixed" || name == "declawed" || name == "livedWithChildren"){
-      petEditing[name] = e.target.checked
-    } else {
-      petEditing[name]=value
-    }
+    petEditing[name]=value
     setPet({...pet, ...petEditing})
-    console.log(pet)
+  }
+
+  const handleCheckBoxes = e => {
+    const { name } = e.target
+    const petEditing = pet
+    petEditing[name] = e.target.checked
+    setPet({...pet, ...petEditing})
   }
 
   const handleMedicalInput = e => {
@@ -43,31 +67,14 @@ const PetEdit = (props) => {
   }
 
   const handleMedical = (e) => {
-    setPet({...pet, medical: [...pet.medical, e.target.value] })
+    setPet({...pet, medical: [...pet.medical, medical] })
     setMedical('')
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    let data = {
-      name: pet.name,
-      age: pet.age,
-      sex: pet.sex,
-      species: pet.species,
-      breed: pet.breed,
-      behavior: pet.behavior,
-      city: pet.city,
-      state: pet.state,
-      available: pet.available,
-      description: pet.description,
-      housetrained: pet.housetrained,
-      vaccinations: pet.vaccinations,
-      lived_with_animals: pet.livedWithAnimals,
-      fixed: pet.fixed,
-      declawed: pet.declawed,
-      lived_with_children: pet.livedWithChildren,
-      medical: pet.medical
-    }
+    const data = formatFormData(pet)
+    console.log(data)
     fetch(`/pets/${props.match.params.id}`, {
       method: 'PATCH',
         headers: {
@@ -77,6 +84,7 @@ const PetEdit = (props) => {
     })
       .then(response => {
         props.history.push('/petindex')
+        props.readPet()
       })
       .catch(err => console.log(err))
   }
@@ -216,42 +224,42 @@ const PetEdit = (props) => {
                 <FormControlLabel
                 control={<Checkbox
                 checked={pet.housetrained}
-                onChange={handleChange}
+                onChange={handleCheckBoxes}
                 name="housetrained"/>}
                 label="Housetrained"
                 />
                 <FormControlLabel
                 control={<Checkbox
                 checked={pet.vaccinations}
-                onChange={handleChange}
+                onChange={handleCheckBoxes}
                 name="vaccinations"/>}
                 label="Vaccinations Current"
                 />
                 <FormControlLabel
                 control={<Checkbox
                 checked={pet.livedWithAnimals}
-                onChange={handleChange}
+                onChange={handleCheckBoxes}
                 name="livedWithAnimals"/>}
                 label="Lived With Animals"
                 />
                 <FormControlLabel
                 control={<Checkbox
                 checked={pet.fixed}
-                onChange={handleChange}
+                onChange={handleCheckBoxes}
                 name="fixed"/>}
                 label="Spayed/Neutered"
                 />
                 <FormControlLabel
                 control={<Checkbox
                 checked={pet.declawed}
-                onChange={handleChange}
+                onChange={handleCheckBoxes}
                 name="declawed"/>}
                 label="Declawed(Cats Only)"
                 />
                 <FormControlLabel
                 control={<Checkbox
                 checked={pet.livedWithChildren}
-                onChange={handleChange}
+                onChange={handleCheckBoxes}
                 name="livedWithChildren"/>}
                 label="Lived With Children"
                 />
@@ -269,10 +277,11 @@ const PetEdit = (props) => {
             <FormControlLabel
               control={
                 <TextField
-                onChange={handleMedicalInput}
-                aria-label="Medical Issue Input"
-                variant="outlined"
-                name="medical"
+                  value={medical}
+                  onChange={handleMedicalInput}
+                  aria-label="Medical Issue Input"
+                  variant="outlined"
+                  name="medical"
                 />
               }
             />
