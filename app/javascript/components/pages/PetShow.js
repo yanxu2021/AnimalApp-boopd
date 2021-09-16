@@ -75,7 +75,7 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
                 <AccordionSummary expandIcon={<ExpandMoreIcon/>}>
                   <Typography>Medical History </Typography>
                 </AccordionSummary>
-                  {pet.medical.map((issue, index) => {
+                  {pet.medical && pet.medical.map((issue, index) => {
                     return(
                       <AccordionDetails key={index}>
                         <Typography>
