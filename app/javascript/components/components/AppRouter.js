@@ -59,7 +59,7 @@ class AppRouter extends React.Component {
                   <Route component={NotFound}/>
                 </Switch>
                 </div>
-                <Footer/>
+                <Footer className="footer"/>
             </Router>
         )
     }
