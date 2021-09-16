@@ -215,13 +215,13 @@ class PetEdit extends React.Component {
                 >
                   <FormControlLabel
                   value="true"
-                  control={<Radio checked={pet.availability == true} />}
+                  control={<Radio checked={pet.availability === 'true'} />}
                   label="Available Now"
                   aria-label="Available Now"
                   />
                   <FormControlLabel
                   value="false"
-                  control={<Radio checked={pet.availability == true} />}
+                  control={<Radio checked={pet.availability === 'false'} />}
                   label="Not Available"
                   aria-label="Not Available"
                   />
