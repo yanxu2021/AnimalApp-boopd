@@ -15,6 +15,7 @@ import AboutUs from '../pages/AboutUs'
 import Home from '../pages/Home'
 import PetShow from '../pages/PetShow'
 import { createBrowserHistory } from 'history'
+import PetEdit from '../pages/PetEdit'
 
 class AppRouter extends React.Component {
     constructor(props){
@@ -48,6 +49,10 @@ class AppRouter extends React.Component {
                   <Route path='/signup' component={SignUp}/>
                   <Route path='/signin' component={SignIn}/>
                   {this.props.loggedIn && <Route path='/petnew' component={PetNew}/> }
+                  {this.props.loggedIn && <Route path='/petedit/:id' render={(props) => {
+                      return <PetEdit history={props.history} pets={pets} match={props.match} readPet={this.readPet} />
+                  }}
+                      />}
                   <Route path='/petindex' render={(props)=> {
                       return <Index {...this.props} pets={this.state.pets} history={props.history}/>
                   }}/>
