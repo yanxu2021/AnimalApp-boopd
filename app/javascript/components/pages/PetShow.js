@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
-const PetShow = ({match, pets, history, readPet}) => {
+const PetShow = ({match, pets, history, readPet, currentUser}) => {
   let pet = {}
   let livedWithAnimals, livedWithChildren
   if(pets) {
@@ -92,6 +92,11 @@ const PetShow = ({match, pets, history, readPet}) => {
             {pet.available == true && <Button>Adopt Me!</Button>}
           </Grid>
           <Grid>
+            {pet.user_id === currentUser.id && (
+              <Button onClick={() => history.push(`/petedit/${match.params.id}`)}>
+                Edit this pet
+              </Button>
+            )}
             <Button onClick={() => deletePet(pet.id)}>
               Delete Pet
             </Button>
