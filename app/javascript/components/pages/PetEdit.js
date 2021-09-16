@@ -181,7 +181,7 @@ const PetEdit = (props) => {
             </Grid>
             <Grid>
               <RadioGroup
-                defaultValue={pet.availability}
+                defaultValue={pet.available}
                 aria-label="availability"
                 name="available"
                 onChange={handleChange}
