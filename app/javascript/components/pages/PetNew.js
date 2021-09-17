@@ -99,7 +99,7 @@ class PetNew extends React.Component {
     let { medical }=this.state.pet
     return (
       <>
-      <div page-body>
+      <div className="form">
         <Grid>
           <FormControl>
             <Grid>
