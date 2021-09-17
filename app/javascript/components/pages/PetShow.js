@@ -12,6 +12,15 @@ import {
 } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
+const apiRequest = () => {
+  return(
+    fetch('/dogs')
+      .then(response => response.json())
+      .catch(err => console.log(err))
+  )
+}
+
+
 const PetShow = ({match, pets, history, readPet, currentUser}) => {
   const [dogInfo, setDogInfo] = useState({})
   let pet = {}
@@ -38,20 +47,16 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
     .catch(errors => console.log("delete errors:", errors))
   }
 
-  const apiRequest = (e) => {
-    e.preventDefault()
-    fetch('/dogs')
-      .then(response => response.json())
-      .then(payload => {
-        let info
-        info = payload.find((dog) => {
-         return dog.name == pet.breed
-        })
-        setDogInfo({...info})
+  const getDogInfo = () => {
+    apiRequest()
+    .then(payload => {
+      let info
+      info = payload.find((dog) => {
+       return dog.name == pet.breed
       })
-      .catch(err => console.log(err))
+      setDogInfo({...info})
+    })
   }
-
 
   return(
     <Grid>
@@ -102,7 +107,7 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
                   }) }
               </Accordion>
             </Grid>
-            <Button onClick={apiRequest}>Get Dog Info</Button>
+            <Button onClick={getDogInfo}>Get Dog Info</Button>
             {dogInfo.name && (
               <>
               <Typography>Bred for: {dogInfo.bred_for}</Typography>
