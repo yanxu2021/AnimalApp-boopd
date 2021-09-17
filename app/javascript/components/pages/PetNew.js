@@ -92,7 +92,11 @@ class PetNew extends React.Component {
       body: JSON.stringify({ pet: data })
     })
       .then(response => {
+        if(response.status === 422){
+          alert('Please check required fields. Your post has not been saved.')
+        } else {
         this.props.history.push('/petindex')
+        }
       })
       .catch(err => console.log(err))
   }
@@ -124,7 +128,7 @@ class PetNew extends React.Component {
                     name="age"
                     onChange={this.handleChange}
                   />
-              </Grid>    
+              </Grid>
               <Grid className={classes.formGrid}>
               <FormLabel>Species</FormLabel>
                 <TextField
@@ -135,7 +139,7 @@ class PetNew extends React.Component {
                 />
               </Grid>
 
-              
+
             </Grid>
             <Grid className={classes.formRowTwo}>
               <Grid className={classes.formGrid}>
@@ -176,7 +180,7 @@ class PetNew extends React.Component {
                   />
                 </RadioGroup>
               </Grid>
-              
+
             </Grid>
             <Grid className={classes.formRowThree}>
               <FormControl>
@@ -219,7 +223,7 @@ class PetNew extends React.Component {
                   />
                 </Grid>
               </FormControl>
-              
+
             </Grid>
             <Grid>
                 <RadioGroup
@@ -263,7 +267,7 @@ class PetNew extends React.Component {
               />
               <Button onClick={this.handleMedical} variant="outlined">Add New</Button>
               </Grid>
-              
+
             <Grid className={classes.formRowFive}>
               <Button variant="outlined">
                 Cancel
