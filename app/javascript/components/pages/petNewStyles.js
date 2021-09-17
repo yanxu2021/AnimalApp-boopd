@@ -5,7 +5,7 @@ export const petNewStyles = () => ({
     form: {
       display: 'flex',
       flexFlow: 'column',
-      alignContent: 'flex-start',
+      alignContent: 'center',
       marginRight: '50px',
       marginLeft: '50px',
     },
@@ -17,15 +17,24 @@ export const petNewStyles = () => ({
       display: 'flex',
       flexFlow: 'row',
       justifyContent: 'flex-start',
-      margin: '20px',
       paddingBottom: '25px'
     },
+
     formRowTwo: {
       display: 'flex',
       flexFlow: 'row',
       justifyContent: 'flexstart',
+      paddingBottom: '25px'
+
     },
+
     formRowThree: {
+      display: 'flex',
+      flexFlow: 'row',
+      justifyContent: 'flex-start',
+    },
+
+    formRowFour: {
       display: 'flex',
       flexFlow: 'row',
       justifyContent: 'flex-start',
@@ -33,14 +42,58 @@ export const petNewStyles = () => ({
       marginRight: '42px',
     },
 
-    formRowFour: {
-        width: '100vw',
-        justifyContent: 'flex-start',
+    formRowFive: {
+      display: 'flex',
+      flexFlow: 'row',
+      justifyContent: 'flex-start',
+      marginLeft: '42px',
+      marginRight: '42px',
     },
 
-    textInput: {
-      width: '600px',
+    formRowSix: {
+      display: 'flex',
+      flexFlow: 'row',
+      justifyContent: 'flex-start',
+      marginLeft: '42px',
+      marginRight: '42px',
     },
+    
+    formRowSeven: {
+      display: 'flex',
+      flexFlow: 'row',
+      justifyContent: 'flex-start',
+      marginLeft: '42px',
+      marginRight: '42px',
+    },
+
+    textInputName: {
+      width: '400px',
+      marginRight: '25px',
+    },
+    textInputAge: {
+      width: '100px',
+      marginRight: '25px',
+    },
+    textInputCity: {
+      width: '200px',
+      marginRight: '25px',
+    },
+    textInputState: {
+      width: '100px',
+      marginRight: '25px',
+    },
+    textInputSpecies: {
+      width: '400px',
+      marginRight: '25px',
+    },
+    textInputBreed: {
+      width: '400px',
+      marginRight: '25px',
+    },
+    radioGroup: {
+      marginLeft: '30px',
+    },
+
     role: {
       paddingRight: '134px',
       paddingLeft: '134px'
