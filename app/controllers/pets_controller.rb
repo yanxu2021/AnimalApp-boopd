@@ -1,5 +1,7 @@
 class PetsController < ApplicationController
   before_action :authenticate_user!, only: [:create, :update, :destroy]
+  require 'rest-client'
+
   def index
     pets = Pet.all
     render json: pets

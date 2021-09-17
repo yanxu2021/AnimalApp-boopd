@@ -38,3 +38,5 @@ yarn-debug.log*
 *.swp
 
 .DS_Store
+
+/config/application.yml
