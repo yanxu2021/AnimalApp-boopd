@@ -92,7 +92,7 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
             {pet.available == true && <Button>Adopt Me!</Button>}
           </Grid>
           <Grid>
-            {pet.user_id === currentUser.id && (
+            {currentUser && pet.user_id === currentUser.id && (
               <Button onClick={() => history.push(`/petedit/${match.params.id}`)}>
                 Edit this pet
               </Button>
