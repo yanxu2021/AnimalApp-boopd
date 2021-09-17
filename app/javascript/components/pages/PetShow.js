@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Typography,
   Checkbox,
@@ -13,6 +13,7 @@ import {
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 const PetShow = ({match, pets, history, readPet, currentUser}) => {
+  const [dogInfo, setDogInfo] = useState({})
   let pet = {}
   let livedWithAnimals, livedWithChildren
   if(pets) {
@@ -41,9 +42,16 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
     e.preventDefault()
     fetch('/dogs')
       .then(response => response.json())
-      .then(payload => console.log(payload))
+      .then(payload => {
+        let info
+        info = payload.find((dog) => {
+         return dog.name == pet.breed
+        })
+        setDogInfo({...info})
+      })
       .catch(err => console.log(err))
   }
+
 
   return(
     <Grid>
@@ -95,6 +103,16 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
               </Accordion>
             </Grid>
             <Button onClick={apiRequest}>Get Dog Info</Button>
+            {dogInfo.name && (
+              <>
+              <Typography>Bred for: {dogInfo.bred_for}</Typography>
+              <Typography>Breed Group: {dogInfo.breed_group}</Typography>
+              <Typography>Height: {dogInfo.height.imperial} inches</Typography>
+              <Typography>Lifespan: {dogInfo.life_span}</Typography>
+              <Typography>Temperament: {dogInfo.temperament}</Typography>
+              <Typography>Weight: {dogInfo.weight.imperial} lbs</Typography>
+              </>
+            )}
           </Grid>
           <Grid>
             <Button onClick={() => history.push('/index')}>Back</Button>
