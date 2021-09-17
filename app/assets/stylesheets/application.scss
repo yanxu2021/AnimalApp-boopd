@@ -180,6 +180,7 @@ padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .p-body{
@@ -190,7 +191,11 @@ padding: 0;
 
   h3{
     text-align: center;
-    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: .1em;
   }
 
 .container {
@@ -199,14 +204,24 @@ padding: 0;
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
+  margin-top: 30px;
 
   .blurb{
-    width: 120px;
+    width: 150px;
     height: 150px;
     border-radius: 50px;
     border-radius: 1px solid lightgreen;
     margin: 30px;
     position: relative;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+      transform: scale(1.1);
+    }
     
     img{
       width: 100%;
@@ -217,6 +232,9 @@ padding: 0;
       align-items: center;
       justify-content: center;
       object-fit: cover;
+
+      
+      
     }
 
     h5{
@@ -234,7 +252,19 @@ padding: 0;
       justify-content: center;
     }
 
+    
+
   }
+  
+  button{
+    background-color: #fe5f55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+  }
+
   .section {
     width: 100%;
     display: flex;
