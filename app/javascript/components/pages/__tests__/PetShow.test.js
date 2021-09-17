@@ -56,9 +56,8 @@ describe('petshow page', () => {
         lived_with_animals: false
     }
 
-
     it("display the pet", () =>{
-        const petShow = shallow(<PetShow pets={[pet]} match={match}/>)
+        const petShow = shallow(<PetShow pets={[pet]} match={match} currentUser={{id: 1}} />)
         expect(petShow.contains(<Typography>Name: Phoebe</Typography>)).toEqual(true)
         expect(petShow.contains(<Typography>Age: 0</Typography>)).toEqual(true)
         expect(petShow.contains(<Typography>Sex: female</Typography>)).toEqual(true)
@@ -74,7 +73,7 @@ describe('petshow page', () => {
         petShow.find(Checkbox).forEach(node => {
         expect(node.props().checked).toEqual(true)
         })
-        const petUnchecked = shallow(<PetShow pets={[petFalse]} match={match}/>)
+        const petUnchecked = shallow(<PetShow pets={[petFalse]} match={match} currentUser={{id: 1}} />)
         petUnchecked.find(Checkbox).forEach(node => {
         expect(node.props().checked).toEqual(false)
         })
