@@ -37,6 +37,14 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
     .catch(errors => console.log("delete errors:", errors))
   }
 
+  const apiRequest = (e) => {
+    e.preventDefault()
+    fetch('/dogs')
+      .then(response => response.json())
+      .then(payload => console.log(payload))
+      .catch(err => console.log(err))
+  }
+
   return(
     <Grid>
       {pet && (
@@ -86,6 +94,7 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
                   }) }
               </Accordion>
             </Grid>
+            <Button onClick={apiRequest}>Get Dog Info</Button>
           </Grid>
           <Grid>
             <Button onClick={() => history.push('/index')}>Back</Button>
