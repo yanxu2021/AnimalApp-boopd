@@ -14,6 +14,10 @@
  *= require_self
  */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
 margin: 0;
 padding: 0;
@@ -33,11 +37,17 @@ padding: 0;
     text-transform: uppercase;
     text-decoration: none;
     font-size: large;
-    font-weight: bold;
+    font-weight: 900;
     color: #fe5f55;
     padding: 20px;
     border-right: #bcbcbc;
     border-width: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-kerning: auto;
+    font-size: small;
+    letter-spacing: .2em;
+    
+    
 
     &:hover {
       background-color: #117a8c;
@@ -50,6 +60,8 @@ padding: 0;
     }
   }
  
+  /* ------FORMS--------*/
+ 
 
  /* ------HOME ---------*/
  .homeContainer{
@@ -58,17 +70,25 @@ padding: 0;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 75px;
-  padding-top: 70px;
+  padding-top: 150px;
   text-align: center;
 
   img{
     width: 50vw;
   }
 
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+  
+  }
+
   h3 {
     padding-top: 25px;
     width: 60vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
   }
  }
 
@@ -88,6 +108,7 @@ padding: 0;
   h3 {
     padding-top: 25px;
     width: 60vw;
+    font-family: 'Rokkitt', serif;
   }
  }
 
@@ -106,7 +127,7 @@ padding: 0;
 
  .logoContainer {
   padding-top: 20px;
-  width: 80vw;
+  width: 100vw;
   position: relative;
   display: flex;
   justify-content: center;
@@ -127,17 +148,17 @@ padding: 0;
 
   .iconContainer{
     position: absolute;
-    top: -1vh;
-    right: 122px;
+    top: -2vh;
+    right: 67px;
     display: inline-block;
 
     .icon{
-      width: 45px;
+      width: 65px;
       animation: spin .25s 2s linear 3;
     }
   }
   img {
-    width: 70px;
+    width: 100px;
     padding: 0;
   }
 
@@ -238,6 +259,7 @@ padding: 0;
  /* -------FOOTER--------- */
  footer {
   font-size: 15px;
+  font-family: 'Roboto', sans-serif;
   position:fixed;
   bottom: 0;
   width: 100%;
@@ -253,6 +275,7 @@ padding: 0;
     color:white;
     text-decoration: none;
     font-weight: bold;  
+    letter-spacing: .05em;
   }
 }
 
@@ -270,6 +293,19 @@ padding: 0;
 }
 .MuiFormLabel-root{
   color: black !important;
+}
+
+/*------INPUT--------*/
+
+.MuiInputBase-root {
+  background-color: white !important;
+}
+.MuiInputBase-input {
+  padding: 0px;
+  border-radius: 0px !important;
+}
+.MuiOutlinedInput-input {
+  padding: 5px;
 }
 
 /* ----ANIMATIONS ----- */
