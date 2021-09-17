@@ -99,7 +99,6 @@ class PetNew extends React.Component {
     let { medical }=this.state.pet
     return (
       <>
-      <div className="form">
         <Grid>
           <FormControl>
             <Grid>
@@ -209,7 +208,6 @@ class PetNew extends React.Component {
               <Grid>
                 <FormLabel>Description</FormLabel>
                 <TextField
-                  className="input"
                   aria-label="Description"
                   variant="outlined"
                   name="description"
@@ -289,7 +287,6 @@ class PetNew extends React.Component {
             </Grid>
           </FormControl>
         </Grid>
-        </div>
       </>
     );
   }
