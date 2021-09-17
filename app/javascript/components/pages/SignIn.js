@@ -64,7 +64,7 @@ class SignIn extends React.Component{
                 <TextField onChange={this.handleChange} name='email' aria-label="E-mail" variant="outlined" size="small"/>
                 <br />
                 <FormLabel>Password</FormLabel>
-                <TextField onChange={this.handleChange} name='password' aria-label="Password" variant="outlined" size="small"/>
+                <TextField onChange={this.handleChange} type='password' name='password' aria-label="Password" variant="outlined" size="small"/>
                 <br />
                 <Button onClick={this.handleSubmit} aria-label="Sign In" variant="contained" color="secondary"  size="small">Sign In</Button>
                 </FormControl>

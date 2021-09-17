@@ -100,11 +100,11 @@ class SignUp extends Component{
             <Grid className={classes.formRowThree}>
               <Grid className={classes.formGrid}>
                 <FormLabel>Password</FormLabel>
-                <TextField aria-label="Password" className={classes.textInput} variant="outlined" name="password" onChange={this.handleChange}/>
+                <TextField aria-label="Password" type='password' className={classes.textInput} variant="outlined" name="password" onChange={this.handleChange}/>
               </Grid>
               <Grid className={classes.formGrid}>
                 <FormLabel>Confirm Password</FormLabel>
-                <TextField aria-label="Confirm Password" className={classes.textInput} variant="outlined" name="passwordConfirmation" onChange={this.handleChange}/>
+                <TextField aria-label="Confirm Password" type='password' className={classes.textInput} variant="outlined" name="passwordConfirmation" onChange={this.handleChange}/>
               </Grid>
             </Grid>
             <Button variant="contained" style={{backgroundColor:'fe5f55'}} className={classes.submitButton} onClick={this.handleSubmit}>Sign Up</Button>
