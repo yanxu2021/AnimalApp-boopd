@@ -125,13 +125,15 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
           </Grid>
           <Grid>
             {pet.user_id === currentUser.id && (
+            <>
               <Button onClick={() => history.push(`/petedit/${match.params.id}`)}>
                 Edit this pet
               </Button>
+              <Button onClick={() => deletePet(pet.id)}>
+                Delete Pet
+              </Button>
+            </>
             )}
-            <Button onClick={() => deletePet(pet.id)}>
-              Delete Pet
-            </Button>
           </Grid>
         </>
       ) }
