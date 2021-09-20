@@ -247,8 +247,7 @@ class PetNew extends React.Component {
               
             </Grid>
             <Grid className={classes.formRowFive}>
-              
-            <FormLabel>Please List Medical Issues</FormLabel>
+              <FormLabel>Please List Medical Issues</FormLabel>
               {medical && medical.map((issue, index)=>{
                 return(
                   <div key={index}>
@@ -269,6 +268,17 @@ class PetNew extends React.Component {
                 }
               />
               <Button onClick={this.handleMedical} variant="contained">Add New</Button>
+              </Grid>
+              <Grid>
+                <FormLabel>Description</FormLabel>
+                <TextField
+                  aria-label="Description"
+                  variant="outlined"
+                  name="description"
+                  onChange={this.handleChange}
+                  multiline
+                  rows={4}
+                />
               </Grid>
               <Grid className={classes.formRowSix}>
               <Grid className={classes.formgrid}>
