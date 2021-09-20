@@ -83,14 +83,13 @@ Acting as a development team, the students use agile and scrum project managemen
       - [x] As a developer, I have a destroy method to pass the test.
     - [x] As a developer, I can create tests to cover my main components/pages.
       - [x] As a developer, I have a PetShow page to pass the test.
-      - [ ] As a developer, I have a PetNew page to pass the test.
+      - [x] As a developer, I have a PetNew page to pass the test.
       - [ ] As a developer, I have a PetEdit page to pass the test.
       - [ ] As a developer, I have a Index page to pass the test.
       - [ ] As a developer, I have a Header page to pass the test.
 
 - [ ] Deployed to Heroku
 - [x] A well written README (with link to live application)
-     - [ ] As a developer, I have a well written README for users or attributors.
 - [x] Team name
 - [x] "About Us" page
     - [x] As a developer, I have a AboutUs page including Project/Team information.
@@ -99,15 +98,6 @@ Acting as a development team, the students use agile and scrum project managemen
 - [ ] Responsive Design (include a phone view for example)
 - [ ] Accessible design features
 - [ ] Continuous Integration
-
-### Things to Think About
-```
-Step out of your comfort zone
-Work with everyone in your group
-Work on a feature or part of the app you’re not completely comfortable with
-Organization and clear communication - make sure everyone is on the same page
-Make sure everyone feels included
-```
 
 ### User Story 
 - [x] Sign-up Page
