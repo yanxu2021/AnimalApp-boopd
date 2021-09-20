@@ -3,8 +3,8 @@ import { Button } from "@material-ui/core"
 import about from '../components/images/about.png'
 import kelen from '../components/images/kelen.jpg'
 import yan from '../components/images/yan.jpeg'
-import amanda from '../components/images/amanda'
-import chris from '../components/images/chris'
+import amanda from '../components/images/amanda.jpg'
+import chris from '../components/images/chris.jpg'
 
 import FAQ from '../components/FAQ'
 
