@@ -10,10 +10,10 @@ import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import MoreIcon from '@material-ui/icons/MoreVert';
-import logo from '../components/images/logo.png';
 import { Button } from '@material-ui/core'
+import logo from '../components/images/logo.png'
 
+// const logo = require('../components/images/logo.png')
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function PrimarySearchAppBar(props) {
+export default function Nav(props) {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
