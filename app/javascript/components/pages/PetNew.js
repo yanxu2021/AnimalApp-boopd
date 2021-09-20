@@ -92,7 +92,11 @@ class PetNew extends React.Component {
       body: JSON.stringify({ pet: data })
     })
       .then(response => {
+        if(response.status === 422){
+          alert('Please check required fields. Your post has not been saved.')
+        } else {
         this.props.history.push('/petindex')
+        }
       })
       .catch(err => console.log(err))
   }
