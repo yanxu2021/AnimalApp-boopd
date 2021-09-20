@@ -1,5 +1,5 @@
 import React from 'react'
-import Enzyme, { shallow } from 'enzyme'
+import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import PetNew from '../PetNew'
 import {
@@ -7,10 +7,17 @@ import {
     FormLabel,
     Button
   } from "@material-ui/core";
+import { createShallow } from '@material-ui/core/test-utils'
 
 Enzyme.configure({adapter: new Adapter()})
 
 describe('petnew page', () => {
+    let shallow
+
+    beforeAll(() => {
+      shallow = createShallow({ dive: true })
+    })
+
     let fakeuser = {id: 1}
     it("display a form", () =>{
         const petNew = shallow(<PetNew current_user={fakeuser}/>)
