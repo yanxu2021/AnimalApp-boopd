@@ -103,7 +103,7 @@ class PetNew extends React.Component {
     return (
       <>
       <div>
-        <Grid >
+        <Grid className={classes.gridContainer}>
 
           <FormControl className={classes.form}>
             <Grid>
@@ -202,8 +202,9 @@ class PetNew extends React.Component {
                     aria-label="Female"
                   />
                 </RadioGroup>
+                </Grid>
               </Grid>
-              <FormControl>
+              <FormControl className={classes.form}>
               <Grid className={classes.formRowFour}>
                   <FormControlLabel
                   control={<Checkbox checked={this.state.housetrained}
@@ -246,28 +247,8 @@ class PetNew extends React.Component {
               
             </Grid>
             <Grid className={classes.formRowFive}>
-                <RadioGroup
-                  className={classes.radioGroup}
-                  aria-label="availability"
-                  name="available"
-                  onChange={this.handleChange}
-                >
-                  <FormControlLabel
-                  value="true"
-                  control={<Radio />}
-                  label="Available Now"
-                  aria-label="Available Now"
-                  />
-                  <FormControlLabel
-                  value="false"
-                  control={<Radio />}
-                  label="Not Available"
-                  aria-label="Not Available"
-                  />
-                </RadioGroup>
-              </Grid>
-              <Grid className={classes.formRowSix}>
-              <FormLabel>Please List Medical Issues</FormLabel>
+              
+            <FormLabel>Please List Medical Issues</FormLabel>
               {medical && medical.map((issue, index)=>{
                 return(
                   <div key={index}>
@@ -287,17 +268,41 @@ class PetNew extends React.Component {
                   />
                 }
               />
-              <Button onClick={this.handleMedical} variant="outlined">Add New</Button>
+              <Button onClick={this.handleMedical} variant="contained">Add New</Button>
+              </Grid>
+              <Grid className={classes.formRowSix}>
+              <Grid className={classes.formgrid}>
+              <RadioGroup
+                  className={classes.radioGroup}
+                  aria-label="availability"
+                  name="available"
+                  onChange={this.handleChange}
+                >
+                  <FormControlLabel
+                  value="true"
+                  control={<Radio />}
+                  label="Available Now"
+                  aria-label="Available Now"
+                  />
+                  <FormControlLabel
+                  value="false"
+                  control={<Radio />}
+                  label="Not Available"
+                  aria-label="Not Available"
+                  />
+                </RadioGroup>
+              </Grid>
               </Grid>
               
             <Grid className={classes.formRowSeven}>
-              <Button variant="outlined">
+              <Button variant="outlined"
+              className={classes.cancelButton}>
                 Cancel
               </Button>
               <Button onClick={this.handleSubmit} variant="contained">
                 Submit
               </Button>
-            </Grid>
+            
             </Grid>
           </FormControl>
         </Grid>

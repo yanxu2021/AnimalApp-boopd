@@ -2,17 +2,29 @@
 export const petNewStyles = () => ({
     root: {
     },
+
+    gridContainer: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingTop: '150px',
+
+
+    },
+
     form: {
       display: 'flex',
       flexFlow: 'column',
       alignContent: 'center',
-      marginRight: '50px',
-      marginLeft: '50px',
+
     },
+
     formGrid: {
       display: 'flex',
       flexFlow: 'column',
     },
+
     formRowOne: {
       display: 'flex',
       flexFlow: 'row',
@@ -32,38 +44,38 @@ export const petNewStyles = () => ({
       display: 'flex',
       flexFlow: 'row',
       justifyContent: 'flex-start',
+      paddingBottom: '25px',
     },
 
     formRowFour: {
       display: 'flex',
       flexFlow: 'row',
-      justifyContent: 'flex-start',
-      marginLeft: '42px',
-      marginRight: '42px',
+      justifyContent: 'center',
+      padding: '25px',
+      border: '2px solid #efefef',
+      borderRadius: '15px',
+      marginBottom: '40px',
+      marginLeft: '0',
     },
 
     formRowFive: {
       display: 'flex',
       flexFlow: 'row',
       justifyContent: 'flex-start',
-      marginLeft: '42px',
-      marginRight: '42px',
+      paddingBottom: '25px',
     },
 
     formRowSix: {
       display: 'flex',
       flexFlow: 'row',
       justifyContent: 'flex-start',
-      marginLeft: '42px',
-      marginRight: '42px',
+      paddingBottom: '25px',
     },
     
     formRowSeven: {
       display: 'flex',
       flexFlow: 'row',
-      justifyContent: 'flex-start',
-      marginLeft: '42px',
-      marginRight: '42px',
+      justifyContent: 'center',
     },
 
     textInputName: {
@@ -75,12 +87,12 @@ export const petNewStyles = () => ({
       marginRight: '25px',
     },
     textInputCity: {
-      width: '200px',
+      width: '400px',
       marginRight: '25px',
     },
     textInputState: {
-      width: '100px',
-      marginRight: '25px',
+      width: '125px',
+
     },
     textInputSpecies: {
       width: '400px',
@@ -90,6 +102,16 @@ export const petNewStyles = () => ({
       width: '400px',
       marginRight: '25px',
     },
+    textInputBehavior: {
+      width: '250px',
+    },
+
+    textInputMedical: {
+      width: '700px',
+      marginRight: '25px',
+      marginLeft: '25px',
+    },
+    
     radioGroup: {
       marginLeft: '30px',
     },
@@ -98,12 +120,17 @@ export const petNewStyles = () => ({
       paddingRight: '134px',
       paddingLeft: '134px'
     },
+
     submitButton: {
       marginTop: '50px',
       width: '150px',
       height: '50px',
-      alignSelf: 'center'
-    }
+      alignSelf: 'center',
+    },
+
+    cancelButton: {
+      marginRight: '10px',
+    },
   })
   
   
