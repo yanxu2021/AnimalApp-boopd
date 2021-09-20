@@ -104,12 +104,14 @@ class PetNew extends React.Component {
       <>
       <div>
         <Grid >
+
           <FormControl className={classes.form}>
             <Grid>
               <Grid className={classes.formRowOne}>
               <Grid className={classes.formGrid}>
               <FormLabel>Name</FormLabel>
                   <TextField
+                    className={classes.textInputName}
                     aria-label="Name"
                     variant="outlined"
                     name="name"
@@ -119,6 +121,7 @@ class PetNew extends React.Component {
               <Grid className={classes.formGrid}>
               <FormLabel>Age</FormLabel>
                   <TextField
+                  className={classes.textInputAge}
                     aria-label="Age"
                     variant="outlined"
                     name="age"
@@ -126,21 +129,41 @@ class PetNew extends React.Component {
                   />
               </Grid>    
               <Grid className={classes.formGrid}>
+              <FormLabel>City</FormLabel>
+                  <TextField
+                  className={classes.textInputCity}
+                    aria-label="City"
+                    variant="outlined"
+                    name="city"
+                    onChange={this.handleChange}
+                  />
+              </Grid>   
+              <Grid className={classes.formGrid}>
+              <FormLabel>State</FormLabel>
+                  <TextField
+                  className={classes.textInputState}
+                    aria-label="State"
+                    variant="outlined"
+                    name="state"
+                    onChange={this.handleChange}
+                  />
+              </Grid>     
+            </Grid>
+            <Grid className={classes.formRowTwo}>
+            <Grid className={classes.formGrid}>
               <FormLabel>Species</FormLabel>
                 <TextField
+                  className={classes.textInputSpecies}
                   aria-label="Species"
                   variant="outlined"
                   name="species"
                   onChange={this.handleChange}
                 />
               </Grid>
-
-              
-            </Grid>
-            <Grid className={classes.formRowTwo}>
               <Grid className={classes.formGrid}>
                 <FormLabel>Breed</FormLabel>
                   <TextField
+                    className={classes.textInputBreed}
                     aria-label="Breed"
                     variant="outlined"
                     name="breed"
@@ -150,14 +173,18 @@ class PetNew extends React.Component {
             <Grid className={classes.formGrid}>
               <FormLabel>Behavior/Personality</FormLabel>
                 <TextField
+                className={classes.textInputBehavior}
                   aria-label="Behavior/Personality"
                   variant="outlined"
                   name="behavior"
                   onChange={this.handleChange}
                 />
-              </Grid>
+              </Grid>       
+            </Grid>
+            <Grid className={classes.formRowThree}>
             <Grid className={classes.formGrid}>
               <RadioGroup
+                  className={classes.radioGroup}
                   aria-label="sex"
                   name="sex"
                   onChange={this.handleChange}
@@ -176,11 +203,8 @@ class PetNew extends React.Component {
                   />
                 </RadioGroup>
               </Grid>
-              
-            </Grid>
-            <Grid className={classes.formRowThree}>
               <FormControl>
-                <Grid>
+              <Grid className={classes.formRowFour}>
                   <FormControlLabel
                   control={<Checkbox checked={this.state.housetrained}
                   onChange={this.handleChange}
@@ -221,8 +245,9 @@ class PetNew extends React.Component {
               </FormControl>
               
             </Grid>
-            <Grid>
+            <Grid className={classes.formRowFive}>
                 <RadioGroup
+                  className={classes.radioGroup}
                   aria-label="availability"
                   name="available"
                   onChange={this.handleChange}
@@ -241,7 +266,7 @@ class PetNew extends React.Component {
                   />
                 </RadioGroup>
               </Grid>
-              <Grid className={classes.formRowFour}>
+              <Grid className={classes.formRowSix}>
               <FormLabel>Please List Medical Issues</FormLabel>
               {medical && medical.map((issue, index)=>{
                 return(
@@ -254,6 +279,7 @@ class PetNew extends React.Component {
               <FormControlLabel
                 control={
                   <TextField
+                  className={classes.textInputMedical}
                   inputRef={this.medicalInput}
                   aria-label="Medical Issue Input"
                   variant="outlined"
@@ -264,7 +290,7 @@ class PetNew extends React.Component {
               <Button onClick={this.handleMedical} variant="outlined">Add New</Button>
               </Grid>
               
-            <Grid className={classes.formRowFive}>
+            <Grid className={classes.formRowSeven}>
               <Button variant="outlined">
                 Cancel
               </Button>
