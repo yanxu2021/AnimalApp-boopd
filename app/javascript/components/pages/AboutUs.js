@@ -1,5 +1,10 @@
 import React from "react"
+import { Button } from "@material-ui/core"
 import about from '../components/images/about.png'
+import kelen from '../components/images/kelen.jpg'
+import yan from '../components/images/yan.jpeg'
+import amanda from '../components/images/amanda'
+import chris from '../components/images/chris'
 
 import FAQ from '../components/FAQ'
 
@@ -13,24 +18,28 @@ class AboutUs extends React.Component {
       <p>something here about who we are...........</p>
         <div className="container">
           <div className="blurb">
-            <img src={about} alt="about"/>
+            <img src={kelen} alt="about"/>
             <h5>Kelen</h5>
             <p>some stuff about person</p>
+            <Button>GitHub</Button>
           </div>
           <div className="blurb">
-            <img src={about} alt="about"/>
+            <img src={yan} alt="about"/>
             <h5>Yan</h5>
             <p>some stuff about person</p>
+            <Button>GitHub</Button>
           </div>
           <div className="blurb">
-            <img src={about} alt="about"/>
+            <img src={amanda} alt="about"/>
             <h5>Amanda</h5>
             <p>some stuff about person</p>
+            <Button className="button">GitHub</Button>
           </div>
           <div className="blurb">
-            <img src={about} alt="about"/>
+            <img src={chris} alt="about"/>
             <h5>Chris</h5>
             <p>some stuff about person</p>
+            <Button>GitHub</Button>
           </div>
         </div>
       <br/>

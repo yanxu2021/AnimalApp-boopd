@@ -48,8 +48,8 @@ class AppRouter extends React.Component {
                 <Switch>
                   <Route path='/signup' component={SignUp}/>
                   <Route path='/signin' component={SignIn}/>
-                  {this.props.loggedIn && <Route path='/petnew' render={() => {
-                    <PetNew {...this.props} readPet={this.readPet}/>
+                  {this.props.loggedIn && <Route path='/petnew' render={(props) => {
+                    return <PetNew {...this.props} readPet={this.readPet} history={props.history}/>
                   }}/> }
                   {this.props.loggedIn && <Route path='/petedit/:id' render={(props) => {
                       return <PetEdit history={props.history} pets={pets} match={props.match} readPet={this.readPet} />
@@ -66,7 +66,7 @@ class AppRouter extends React.Component {
                   <Route component={NotFound}/>
                 </Switch>
                 </div>
-                <Footer/>
+                <Footer className="footer"/>
             </Router>
         )
     }

@@ -39,4 +39,4 @@ yarn-debug.log*
 
 .DS_Store
 
-config/application.yml
+/config/application.yml
