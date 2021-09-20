@@ -127,7 +127,7 @@ class PetNew extends React.Component {
                     name="age"
                     onChange={this.handleChange}
                   />
-              </Grid>    
+              </Grid>
               <Grid className={classes.formGrid}>
               <FormLabel>City</FormLabel>
                   <TextField
@@ -137,7 +137,7 @@ class PetNew extends React.Component {
                     name="city"
                     onChange={this.handleChange}
                   />
-              </Grid>   
+              </Grid>
               <Grid className={classes.formGrid}>
               <FormLabel>State</FormLabel>
                   <TextField
@@ -147,7 +147,7 @@ class PetNew extends React.Component {
                     name="state"
                     onChange={this.handleChange}
                   />
-              </Grid>     
+              </Grid>
             </Grid>
             <Grid className={classes.formRowTwo}>
             <Grid className={classes.formGrid}>
@@ -179,7 +179,7 @@ class PetNew extends React.Component {
                   name="behavior"
                   onChange={this.handleChange}
                 />
-              </Grid>       
+              </Grid>
             </Grid>
             <Grid className={classes.formRowThree}>
             <Grid className={classes.formGrid}>
@@ -244,9 +244,41 @@ class PetNew extends React.Component {
                   />
                 </Grid>
               </FormControl>
-              
+
             </Grid>
             <Grid className={classes.formRowFive}>
+                <RadioGroup
+                  className={classes.radioGroup}
+                  aria-label="availability"
+                  name="available"
+                  onChange={this.handleChange}
+                >
+                  <FormControlLabel
+                  value="true"
+                  control={<Radio />}
+                  label="Available Now"
+                  aria-label="Available Now"
+                  />
+                  <FormControlLabel
+                  value="false"
+                  control={<Radio />}
+                  label="Not Available"
+                  aria-label="Not Available"
+                  />
+                </RadioGroup>
+              </Grid>
+              <Grid>
+                <FormLabel>Description</FormLabel>
+                <TextField
+                  aria-label="Description"
+                  variant="outlined"
+                  name="description"
+                  onChange={this.handleChange}
+                  multiline
+                  rows={4}
+                />
+              </Grid>
+              <Grid className={classes.formRowSix}>
               <FormLabel>Please List Medical Issues</FormLabel>
               {medical && medical.map((issue, index)=>{
                 return(
@@ -268,17 +300,6 @@ class PetNew extends React.Component {
                 }
               />
               <Button onClick={this.handleMedical} variant="contained">Add New</Button>
-              </Grid>
-              <Grid>
-                <FormLabel>Description</FormLabel>
-                <TextField
-                  aria-label="Description"
-                  variant="outlined"
-                  name="description"
-                  onChange={this.handleChange}
-                  multiline
-                  rows={4}
-                />
               </Grid>
               <Grid className={classes.formRowSix}>
               <Grid className={classes.formgrid}>
@@ -303,7 +324,7 @@ class PetNew extends React.Component {
                 </RadioGroup>
               </Grid>
               </Grid>
-              
+
             <Grid className={classes.formRowSeven}>
               <Button variant="outlined"
               className={classes.cancelButton}>
