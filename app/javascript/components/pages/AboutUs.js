@@ -15,30 +15,30 @@ class AboutUs extends React.Component {
       <br/>
       <div className="p-body">
       <h3>WHO WE ARE</h3>
-         <div className="container">
+        <div className="container">
           <div className="blurb">
             <img src={kelen} alt="about"/>
             <h5>Kelen</h5>
-            <p>Tech Lead</p>
-            <Button>GitHub</Button>
+            <p>some stuff about person</p>
+            <Button className="button" target="_blank" href="https://github.com/kel-man">GitHub</Button>
           </div>
           <div className="blurb">
             <img src={yan} alt="about"/>
             <h5>Yan</h5>
-            <p>Project Manager</p>
-            <Button>GitHub</Button>
+            <p>some stuff about person</p>
+            <Button className="button" target="_blank" href="https://github.com/yanxu2021">GitHub</Button>
           </div>
           <div className="blurb">
             <img src={amanda} alt="about"/>
             <h5>Amanda</h5>
-            <p>Design Lead</p>
-            <Button className="button">GitHub</Button>
+            <p>some stuff about person</p>
+            <Button className="button" target="_blank" href="https://github.com/AFerg15">GitHub</Button>
           </div>
           <div className="blurb">
             <img src={chris} alt="about"/>
             <h5>Chris</h5>
-            <p>Product Manager</p>
-            <Button>GitHub</Button>
+            <p>some stuff about person</p>
+            <Button className="button" target="_blank" href="https://github.com/Chrisluna10">GitHub</Button>
           </div>
         </div>
       <br/>
