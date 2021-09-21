@@ -305,30 +305,6 @@ class PetNew extends React.Component {
               />
               <Button onClick={this.handleMedical} variant="contained">Add New</Button>
               </Grid>
-              <Grid className={classes.formRowSix}>
-              <Grid className={classes.formgrid}>
-              <RadioGroup
-                  className={classes.radioGroup}
-                  aria-label="availability"
-                  name="available"
-                  onChange={this.handleChange}
-                >
-                  <FormControlLabel
-                  value="true"
-                  control={<Radio />}
-                  label="Available Now"
-                  aria-label="Available Now"
-                  />
-                  <FormControlLabel
-                  value="false"
-                  control={<Radio />}
-                  label="Not Available"
-                  aria-label="Not Available"
-                  />
-                </RadioGroup>
-              </Grid>
-              </Grid>
-
             <Grid className={classes.formRowSeven}>
               <Button variant="outlined"
               className={classes.cancelButton}>
@@ -337,7 +313,7 @@ class PetNew extends React.Component {
               <Button onClick={this.handleSubmit} variant="contained">
                 Submit
               </Button>
-            
+
             </Grid>
           </FormControl>
         </Grid>
