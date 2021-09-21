@@ -32,7 +32,6 @@ describe('pet index page', () => {
     }
 it("display an index of pets", () =>{
     const indexCard = shallow(<IndexCard pets={[fakePet]}/>)
-    console.log(indexCard.debug())
     expect(indexCard.contains(<Typography gutterBottom variant="h5" component="h2">Phoebe, 2, Dog</Typography>)).toEqual(true)
     expect(indexCard.contains(<Typography variant="body2" color="textSecondary" component="p">chill</Typography>)).toEqual(true)
     // expect(indexCard.find(<Button size="small" color="primary">My Story</Button>)).toEqual(true)
