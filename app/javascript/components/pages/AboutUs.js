@@ -3,8 +3,8 @@ import { Button } from "@material-ui/core"
 import about from '../components/images/about.png'
 import kelen from '../components/images/kelen.jpg'
 import yan from '../components/images/yan.jpeg'
-import amanda from '../components/images/amanda'
-import chris from '../components/images/chris'
+import amanda from '../components/images/amanda.jpg'
+import chris from '../components/images/chris.jpg'
 
 import FAQ from '../components/FAQ'
 
@@ -15,31 +15,30 @@ class AboutUs extends React.Component {
       <br/>
       <div className="p-body">
       <h3>WHO WE ARE</h3>
-      <p>something here about who we are...........</p>
         <div className="container">
           <div className="blurb">
             <img src={kelen} alt="about"/>
             <h5>Kelen</h5>
-            <p>some stuff about person</p>
-            <Button>GitHub</Button>
+            <p>Tech Lead</p>
+            <Button className="button" target="_blank" href="https://github.com/kel-man">GitHub</Button>
           </div>
           <div className="blurb">
             <img src={yan} alt="about"/>
             <h5>Yan</h5>
-            <p>some stuff about person</p>
-            <Button>GitHub</Button>
+            <p>Project Manager</p>
+            <Button className="button" target="_blank" href="https://github.com/yanxu2021">GitHub</Button>
           </div>
           <div className="blurb">
             <img src={amanda} alt="about"/>
             <h5>Amanda</h5>
-            <p>some stuff about person</p>
-            <Button className="button">GitHub</Button>
+            <p>Design Lead</p>
+            <Button className="button" target="_blank" href="https://github.com/AFerg15">GitHub</Button>
           </div>
           <div className="blurb">
             <img src={chris} alt="about"/>
             <h5>Chris</h5>
-            <p>some stuff about person</p>
-            <Button>GitHub</Button>
+            <p>Product Manager</p>
+            <Button className="button" target="_blank" href="https://github.com/Chrisluna10">GitHub</Button>
           </div>
         </div>
       <br/>

@@ -171,6 +171,24 @@ padding: 0;
     }
  
 }
+/*------- INDEX ------- */
+.index-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.MuiCard-root {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.MuiButton-root {
+  background-color: #fe5f55 !important;
+  color: white !important;
+  align-self: right;
+}
 
 /* ------ABOUT----------- */
 
@@ -218,6 +236,7 @@ padding: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     &:hover{
       transform: scale(1.1);
@@ -250,6 +269,7 @@ padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-bottom: 10px;
     }
 
     
