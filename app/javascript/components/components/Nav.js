@@ -196,19 +196,8 @@ export default function Nav(props) {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <MenuIcon />
             </IconButton>
-          </div>
-          <div>
-            <IconButton
-            edge="end"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-             <MenuIcon />
-          </IconButton>
-
           </div>
         </Toolbar>
       </AppBar>
