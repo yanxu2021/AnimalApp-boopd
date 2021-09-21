@@ -13,8 +13,6 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import { Button } from '@material-ui/core'
 import logo from '../components/images/logo.png'
 
-// const logo = require('../components/images/logo.png')
-
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
