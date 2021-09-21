@@ -18,9 +18,9 @@ describe('petnew page', () => {
       shallow = createShallow({ dive: true })
     })
 
-    let fakeuser = {id: 1}
+    let testuser = {id: 1}
     it("display a form", () =>{
-        const petNew = shallow(<PetNew current_user={fakeuser}/>)
+        const petNew = shallow(<PetNew current_user={testuser} />)
         const formLabel = petNew.find(FormLabel)
         expect(formLabel.length).toEqual(9)
         const button = petNew.find(Button)

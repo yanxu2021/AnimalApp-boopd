@@ -40,13 +40,17 @@ const PetEdit = (props) => {
   const [medical, setMedical] = useState('')
 
   useEffect(() => {
+    getPet()
+  }, [])
+
+  const getPet = () => {
     fetch(`/pets/${props.match.params.id}`)
       .then(response => response.json())
       .then(payload => {
         setPet({...payload, livedWithChildren: payload.lived_with_children, livedWithAnimals: payload.lived_with_animals})
       })
       .catch(err => console.log(err))
-  }, [])
+  }
 
   const handleChange = (e) => {
     const petEditing = pet
