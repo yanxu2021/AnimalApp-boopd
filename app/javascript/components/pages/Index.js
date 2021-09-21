@@ -5,7 +5,10 @@ class Index extends Component{
   render(){
       return(
       <>
+        <div className="index-container">
+          <h3>All Listings</h3>
           <IndexCard {...this.props}/>
+        </div>
       </>
       )
   }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Typography,
   Checkbox,
@@ -12,7 +12,17 @@ import {
 } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
+const apiRequest = () => {
+  return(
+    fetch('/dogs')
+      .then(response => response.json())
+      .catch(err => console.log(err))
+  )
+}
+
+
 const PetShow = ({match, pets, history, readPet, currentUser}) => {
+  const [dogInfo, setDogInfo] = useState({})
   let pet = {}
   let livedWithAnimals, livedWithChildren
   if(pets) {
@@ -35,6 +45,17 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
       history.push('/index')
     })
     .catch(errors => console.log("delete errors:", errors))
+  }
+
+  const getDogInfo = () => {
+    apiRequest()
+    .then(payload => {
+      let info
+      info = payload.find((dog) => {
+       return dog.name == pet.breed
+      })
+      setDogInfo({...info})
+    })
   }
 
   return(
@@ -86,6 +107,17 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
                   }) }
               </Accordion>
             </Grid>
+            <Button onClick={getDogInfo}>Get Dog Info</Button>
+            {dogInfo.name && (
+              <>
+              <Typography>Bred for: {dogInfo.bred_for}</Typography>
+              <Typography>Breed Group: {dogInfo.breed_group}</Typography>
+              <Typography>Height: {dogInfo.height.imperial} inches</Typography>
+              <Typography>Lifespan: {dogInfo.life_span}</Typography>
+              <Typography>Temperament: {dogInfo.temperament}</Typography>
+              <Typography>Weight: {dogInfo.weight.imperial} lbs</Typography>
+              </>
+            )}
           </Grid>
           <Grid>
             <Button onClick={() => history.push('/index')}>Back</Button>
@@ -93,13 +125,15 @@ const PetShow = ({match, pets, history, readPet, currentUser}) => {
           </Grid>
           <Grid>
             {pet.user_id === currentUser.id && (
+            <>
               <Button onClick={() => history.push(`/petedit/${match.params.id}`)}>
                 Edit this pet
               </Button>
+              <Button onClick={() => deletePet(pet.id)}>
+                Delete Pet
+              </Button>
+            </>
             )}
-            <Button onClick={() => deletePet(pet.id)}>
-              Delete Pet
-            </Button>
           </Grid>
         </>
       ) }

@@ -93,8 +93,12 @@ const PetEdit = (props) => {
       body: JSON.stringify({ pet: data })
     })
       .then(response => {
-        props.history.push('/petindex')
-        props.readPet()
+        if(response.status === 422){
+          alert('Please check required fields. Your post has not been saved.')
+        } else {
+          props.history.push('/petindex')
+          props.readPet()
+        }
       })
       .catch(err => console.log(err))
   }
