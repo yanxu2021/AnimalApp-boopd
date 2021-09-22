@@ -25,8 +25,10 @@
 After check-in and stand up, we always get a coffee chat then start a day with our Trello board doing/MVP section. If needed update the cards/checklist or assign the member to finish that task. We make sure everyone on the same page, and each card with task can be done in half of day so we can pull request as a milestone to get review and approve, then move to the next task to push the project forward. Most of days, we had our mentor session in the afternoon, we always discuss our blocker after lunch but before the mentor session so that we have something need to figure out and efficiently use mentorship time to get that blocker problem asked and solved properly. We learned a lot from mentor session.   
 ## Wrap-up (2 min)
 - Each person share something you learned
+
 Never done learning. When pair programming, don't be afraid to ask questions and argue if there is misunderstanding and be brave to the new topic. 
 - Each person share some advice for the next cohort
+
 Maybe at first everything look like no sense at all but after implementation/practice/repeat and have that blocker resolved, it turns out easy-going and handy. Use all resources. Try/fail and try again until you get it. Take advantage of the time with mentors.
 
 ## Team Structure
