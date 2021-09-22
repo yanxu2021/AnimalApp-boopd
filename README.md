@@ -31,16 +31,15 @@
 
   </tr>
   <tr>
-    <td>3. Run  in your bash/command line</td>
+    <td> 2. Run the server locally
+    <br />$ rails s
+    </td>
   </tr>
 </table>
  
 ### >Dependencies
-- React
-- React-DOM
-- Webpack
-- Material-UI
-- Jest and Enzyme
+- Ruby on Rails 6.1.4
+- yarn 1.21.1
     
 ### >Reporting a Vulnerability
 To report a vulnerability please send an email with the details to [Email](team.kyac@gmail.com). This will help us to assess the risk and start the necessary steps. Thanks for helping to keep **boopd** secure.
