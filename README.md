@@ -20,8 +20,7 @@
     <td rowspan="9"><a href="https://floating-mesa-77996.herokuapp.com/">Live Version</a></td>
     <td>1. Clone this repo locally</td>
   </tr>
-  <tr><td>2.  Clone and install</td></tr>
-  <tr><td>$ git clone https://github.com/team-kyac/boopd.git</td></tr>
+  <tr><td>2.  Clone and install<br />$ git clone https://github.com/team-kyac/boopd.git</td></tr>
   <tr><td>$ cd boopd</td></tr>
   <tr><td>$ bundle</td></tr>
   <tr><td>$ yarn</td></tr>
