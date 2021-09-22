@@ -28,3 +28,44 @@ After check-in and stand up, we always get a coffee chat then start a day with o
 Never done learning. When pair programming, don't be afraid to ask questions and argue if there is misunderstanding and be brave to the new topic. 
 - Each person share some advice for the next cohort
 Maybe at first everything look like no sense at all but after implementation/practice/repeat and have that blocker resolved, it turns out easy-going and handy. 
+
+## Team Structure
+
+**Project Manager** - AM: What tasks did you complete yesterday? What task are you working on today?
+
+**Tech Lead** - AM: What are your blockers? What is your plan for your mentorship session today?
+
+**Product Manager** - PM: What is the overall status of your app?
+
+**Design Lead** - PM: What is the current status of the user experience?
+
+## Brainstorming
+
+We at KYAC Inc. have seen an increase of de-homed animals and struggling families during the pandemic.
+It is our vision to be part of the solution. With our pet-adoption-resource(boopd) application,
+We connect struggling animals with benevolent humans who wish to care for them in these trying times.
+We present to you a nation-wide resource to find the animal that belongs in your home, or
+find a home that is worthy of your beloved pet that you can no longer care for.
+```
+**Every Snoot Deserves a Boop**
+snoot /snuːt/ n. 脸；鬼脸
+boop(/u/,n. <非正式>（电子设备发出的）急促低沉的哔哔声，嘟嘟声；温柔怜爱地轻戳（某人的鼻子）的动作)
+```
+
+- Sign up page for organizations and individuals - **1**
+- Listing page for all animals up for adoption … no user sign in needed - **2**
+  1. Additional support (food …)
+  2. External API for animal breed information
+  3. Report bad listings
+  4. Creator of listing can delete listing
+
+- Adoption organizations to be able to register animals for adoption - **3**
+- Review form for organizations - **5**
+
+- Individuals to register animals for adoption - **3**
+- Search bar for animals with filtering - **4**
+- User blog - **6**
+- User profile - **6**
+
+- *STRETCH* - Contact form to adopt animals
+- *STRETCH* - Support listing for owners that need help
