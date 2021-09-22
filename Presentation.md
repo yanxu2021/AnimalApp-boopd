@@ -13,7 +13,7 @@
 ## Project (2 min)
 ### Introduce yourself and your role on the team
 - Hi, my name is Yan, I am currently studying in LEARN Academy /əˈkædəmi/ and working in Team KYAC as project manager. 
-- I am certified in project management since 2008. I am comfort with a variety /vəˈraɪəti/ of technologies, and willing to learn new things instead stay with same tasks everyday.
+- I am certified in project management since 2008. I am comfort with a variety /vəˈraɪəti/ of technologies, and willing to learn new things instead stay with same tasks everyday. Appreciate a lot for all teammeber gave me the opportunity to get the project done on time and in scope. Organize and prioritize the tasks.
 
 ### Share a notable blocker your team overcame
 - Project blocker: As the project manager, my blocker is more on communication, sth like using space or tab to get indentation/ˌɪndenˈteɪʃn/缩排. LOL, just kidding. Our project blocker was to get project scope clearly, what is the must-have, what is the stretch challenge, how to think big and act small. 
