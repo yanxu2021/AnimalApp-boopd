@@ -27,7 +27,7 @@ After check-in and stand up, we always get a coffee chat then start a day with o
 - Each person share something you learned
 Never done learning. When pair programming, don't be afraid to ask questions and argue if there is misunderstanding and be brave to the new topic. 
 - Each person share some advice for the next cohort
-Maybe at first everything look like no sense at all but after implementation/practice/repeat and have that blocker resolved, it turns out easy-going and handy. 
+Maybe at first everything look like no sense at all but after implementation/practice/repeat and have that blocker resolved, it turns out easy-going and handy. Use all resources. Try/fail and try again until you get it. Take advantage of the time with mentors.
 
 ## Team Structure
 
