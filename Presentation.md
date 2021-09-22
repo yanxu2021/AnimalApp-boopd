@@ -14,11 +14,14 @@
 - Introduce yourself and your role on the team
 Hi, my name is Yan, My name is yan xu. I am currently studying in LEARN Academy /əˈkædəmi/ and working in Team KYAC as project manager. I am certified in project management and six sigma green belt, comfort with a variety /vəˈraɪəti/ of technologies, and interest in learning new ones. veteran /ˈvetərən退伍军人. Make a transition from military. Willing to learn new things instead stay with same tasks everyday.
 - Share a notable blocker your team overcame
-We had problem to get the default value, we got undefined instead. Make sure the conditional render() correct, It render the page before loading that field. Using functional component easily to solve that problem. The functional component render after everything loaded. No delay between. And also we learn functional component from React Material UI. The most style for the form on the create page, animation on the home page, figure out how they positioned with CSS be more responsible. absolution postioning to make sure working with containder. with the container be controled and responsive. 
+Tech blocker: We had problem to get the default value, we got undefined instead. Make sure the conditional render() correct, It render the page before loading that field. Using functional component easily to solve that problem. The functional component render after everything loaded. No delay between. And also we learn functional component from React Material UI. 
+UI blocker: The most style for the form on the create page, animation on the home page, figure out how they positioned with CSS be more responsible. absolution postioning to make sure working with containder. with the container be controled and responsive. 
 CSS animation. key animation. each letter stored in individule image/item. @keyframe attribute: animation: bounce how long, delay, ease out, how many repeat.
-very first test. implement mock date to test Create. 
+Product blocker: very first test. implement mock data to test Create. 
+Project blocker: communication, sth like using space or tab to get indentation. LOL, just kiding. I think we all learning from every meeting and pair programming. There is not that much 
 
 - Share what a typical day looked like for your team during the project
+After check-in and stand up
 ## Wrap-up (2 min)
 - Each person share something you learned
 Never done learning. When pair programming, don't be afraid speak out. 
