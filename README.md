@@ -17,7 +17,7 @@
     <th>From the Repo</th>
   </tr>
   <tr>
-    <td rowspan="4"><a href="https://floating-mesa-77996.herokuapp.com/">Live Version</a></td>
+    <td rowspan="9"><a href="https://floating-mesa-77996.herokuapp.com/">Live Version</a></td>
     <td>1. Clone this repo locally</td>
   </tr>
   <tr><td>2.  Clone and install</td></tr>
