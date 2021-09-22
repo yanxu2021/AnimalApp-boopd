@@ -21,14 +21,13 @@
     <td>1. Clone this repo locally</td>
   </tr>
   <tr>
-    <td>2.  Clone and install
+    <td>2.  Clone and install</td>
     <td>$ git clone https://github.com/team-kyac/boopd.git</td>
     <td>$ cd boopd</td>
     <td>$ bundle</td>
     <td>$ yarn</td>
     <td>$ rails db:create</td>
     <td>$ rails db:migrate</td>
-    </td>
   </tr>
   <tr>
     <td>3. Run  in your bash/command line</td>
