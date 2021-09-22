@@ -20,12 +20,16 @@
     <td rowspan="9"><a href="https://floating-mesa-77996.herokuapp.com/">Live Version</a></td>
     <td>1. Clone this repo locally</td>
   </tr>
-  <tr><td>2.  Clone and install<br />$ git clone https://github.com/team-kyac/boopd.git</td></tr>
-  <tr><td>$ cd boopd</td></tr>
-  <tr><td>$ bundle</td></tr>
-  <tr><td>$ yarn</td></tr>
-  <tr><td>$ rails db:create</td></tr>
-  <tr><td>$ rails db:migrate</td></tr>
+  <tr>
+    <td>2.  Clone and install
+    <br />$ git clone https://github.com/team-kyac/boopd.git
+    <br />$ cd boopd
+    <br />$ bundle
+    <br />$ yarn
+    <br />$ rails db:create
+    <br />$ rails db:migrate
+    </td>
+  </tr>
   <tr>
     <td>3. Run  in your bash/command line</td>
   </tr>
