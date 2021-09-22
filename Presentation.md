@@ -16,7 +16,7 @@
 - I am certified in project management since 2008. I am comfort with a variety /vəˈraɪəti/ of technologies, and willing to learn new things instead stay with same tasks everyday.
 
 ### Share a notable blocker your team overcame
-- Project blocker: As the project manager, my blocker is more on communication, sth like using space or tab to get indentation/ˌɪndenˈteɪʃn/缩排. LOL, just kidding. Our project blocker was to get clearly project scope, what is the must-have, what is the stretch challenge, how to  think big and act small. 
+- Project blocker: As the project manager, my blocker is more on communication, sth like using space or tab to get indentation/ˌɪndenˈteɪʃn/缩排. LOL, just kidding. Our project blocker was to get project scope clearly, what is the must-have, what is the stretch challenge, how to think big and act small. 
 - Tech blocker: We had problem to get the default value, we got undefined instead. Make sure the conditional render() correct, It render the page before loading that field. Using functional component easily to solve that problem. The functional component render after everything loaded. No delay between. And also we learn functional component from React Material UI. 
 - UI blocker: The most style for the form on the create page, animation on the home page, figure out how they positioned with CSS be more responsible. absolution positioning to make sure working with container. with the container be controlled and responsive. CSS animation. key animation. each letter stored in individual image/item. @keyframe attribute: animation: bounce how long, delay, ease out, how many repeat.
 - Product blocker: very first test. implement mock data to test Create. 
