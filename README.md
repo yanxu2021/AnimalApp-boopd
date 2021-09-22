@@ -19,7 +19,7 @@
   <tr>
     <td rowspan="9"><a href="https://floating-mesa-77996.herokuapp.com/">Live Version</a></td>
     <td>1.  Clone and install
-    <br />$ git clone https://github.com/team-kyac/boopd.git
+    <br />$ git clone <a href="https://github.com/team-kyac/boopd.git">boopd</a>
     <br />$ cd boopd
     <br />$ bundle
     <br />$ yarn
